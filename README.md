@@ -19,7 +19,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bruno%20da%20Silva%20Nunes-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bruno-dsnunes/)
 [![GitHub](https://img.shields.io/badge/GitHub-bruno--dsn-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bruno-dsn)
-[![Email](https://img.shields.io/badge/Email-brno.s.nunes%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brno.s.nunes@gmail.com)
+[![Email](https://img.shields.io/badge/Email-brdsnunes%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brdsnunes@gmail.com)
 [![Localização](https://img.shields.io/badge/São%20Paulo-SP%2C%20Brasil-1d9e75?style=for-the-badge&logo=googlemaps&logoColor=white)](#)
 
 </div>
