@@ -152,7 +152,7 @@ bruno = {
 
 > 🚀 Estou em busca de oportunidades como **Analista de Dados**, **Analista de BI** ou **Engenheiro de Dados**.
 > Se você tem um desafio interessante envolvendo dados, adoro uma boa conversa!
-> Me chame no **[LinkedIn](https://www.linkedin.com/in/bruno-dsnunes/)** ou mande um **[e-mail](mailto:brno.s.nunes@gmail.com)**. 📬
+> Me chame no **[LinkedIn](https://www.linkedin.com/in/bruno-dsnunes/)** ou mande um **[e-mail](mailto:brdsnunes@gmail.com)**. 📬
 
 <br>
 
