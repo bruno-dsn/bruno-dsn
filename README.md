@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a6bdc,100:1d9e75&height=200&section=header&text=Bruno%20da%20Silva%20Nunes&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Analista%20de%20Dados%20%7C%20BI%20%7C%20Engenharia%20de%20Dados&descAlignY=58&descSize=18&animation=fadeIn" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a6bdc,100:1d9e75&height=200&section=header&text=Bruno%20da%20Silva%20Nunes&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Analista%20de%20Dados%20%7C%20Em%20forma%C3%A7%C3%A3o%20para%20Ci%C3%AAncia%20de%20Dados%20%26%20IA&descAlignY=58&descSize=16&animation=fadeIn" />
 
 </div>
 
@@ -10,8 +10,8 @@
 
 </div>
 
-> 📊 Transformo dados em decisões. Apaixonado por construir pipelines, dashboards e análises que geram impacto real nos negócios.
-> Acredito que **dados bem explorados contam histórias poderosas** — e estou sempre aprendendo a contá-las melhor.
+> 📊 Transformo dados em decisões. Apaixonado por construir análises e modelos que geram impacto real nos negócios.
+> Em junho/2026 inicio a **Pós-Tech AI Scientist (FIAP + Alura)** — aprofundando em Machine Learning, Deep Learning, NLP e IA Generativa.
 
 <br>
 
@@ -32,16 +32,33 @@
 
 ```python
 bruno = {
-    "nome"       : "Bruno da Silva Nunes",
-    "cargo"      : "Analista de Dados",
-    "localização": "São Paulo, SP 🇧🇷",
-    "foco"       : ["Análise de Dados", "Business Intelligence", "Engenharia de Dados"],
-    "ferramentas": ["Python", "SQL", "Power BI", "Pandas", "Scikit-Learn"],
-    "aprendendo" : ["dbt", "Airflow", "Spark"],
-    "aberto_para": "Novas oportunidades 🚀",
-    "curiosidade": "Café e dados — não funciono sem nenhum dos dois ☕",
+    "nome"          : "Bruno da Silva Nunes",
+    "cargo"         : "Analista de Dados",
+    "localização"   : "São Paulo, SP 🇧🇷",
+    "foco"          : ["Análise de Dados", "Machine Learning", "IA Generativa"],
+    "ferramentas"   : ["Python", "SQL", "Power BI", "Pandas", "Scikit-Learn"],
+    "pós_graduação" : "AI Scientist - Ciência de Dados com IA (FIAP + Alura) | início Jun/2026",
+    "aprendendo"    : ["Machine Learning", "Deep Learning", "NLP", "LLMs & RAG", "MLOps"],
+    "aberto_para"   : "Novas oportunidades 🚀",
+    "curiosidade"   : "Café e dados — não funciono sem nenhum dos dois ☕",
 }
 ```
+
+<br>
+
+---
+
+## 🎓 Pós-Tech AI Scientist — FIAP + Alura
+
+> Especialização de 360h em Ciência de Dados com IA, em 5 fases (início Jun/2026):
+
+| Fase | O que vou aprender |
+|---|---|
+| 1 — Business Understanding & Data Analysis | CRISP-DM, EDA, Estatística, Git/GitHub, Docker |
+| 2 — Data Prepare | Big Data (Spark, Hadoop), SQL avançado, NoSQL, Banco Vetorial, ETL/Kafka, Cloud |
+| 3 — Modeling Machine Learning | Classificação, Regressão, Clusterização, Séries Temporais, Aprendizado por Reforço |
+| 4 — Deep Learning & NLP | Redes Neurais, CNN, LSTM, Transformers, IA Generativa, RAG, Agents, LLMs |
+| 5 — MLOps & Deploy | CI/CD, Streamlit, MLflow, monitoramento e governança de IA |
 
 <br>
 
@@ -68,17 +85,22 @@ bruno = {
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)
 ![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge&logo=python&logoColor=white)
 
-### 🗄️ Banco de Dados & Engenharia
+### 🗄️ Banco de Dados & Versionamento
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-### 🌱 Aprendendo agora
-![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
-![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white)
+### 🧠 Em formação — Pós-Tech AI Scientist (FIAP + Alura, 2026/2027)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-1a6bdc?style=for-the-badge)
+![Deep Learning](https://img.shields.io/badge/Deep%20Learning-1a6bdc?style=for-the-badge)
+![NLP](https://img.shields.io/badge/NLP-1a6bdc?style=for-the-badge)
+![LLMs & RAG](https://img.shields.io/badge/LLMs%20%26%20RAG-1d9e75?style=for-the-badge)
+![LangChain](https://img.shields.io/badge/LangChain-1d9e75?style=for-the-badge)
 ![Apache Spark](https://img.shields.io/badge/Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![MLOps](https://img.shields.io/badge/MLOps-1d9e75?style=for-the-badge)
 
 </div>
 
@@ -150,7 +172,7 @@ bruno = {
 
 </div>
 
-> 🚀 Estou em busca de oportunidades como **Analista de Dados**, **Analista de BI** ou **Engenheiro de Dados**.
+> 🚀 Estou em busca de oportunidades como **Analista de Dados** e programas de **formação/trainee em Ciência de Dados**.
 > Se você tem um desafio interessante envolvendo dados, adoro uma boa conversa!
 > Me chame no **[LinkedIn](https://www.linkedin.com/in/bruno-dsnunes/)** ou mande um **[e-mail](mailto:brdsnunes@gmail.com)**. 📬
 
