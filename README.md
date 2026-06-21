@@ -11,7 +11,7 @@
 </div>
 
 > 📊 Transformo dados em decisões. Apaixonado por construir análises e modelos que geram impacto real nos negócios.
-> Em junho/2026 inicio a **Pós-Tech AI Scientist (FIAP + Alura)** — aprofundando em Machine Learning, Deep Learning, NLP e IA Generativa.
+> **Pós-Tech AI Scientist (FIAP)** — aprofundando em Machine Learning, Deep Learning, NLP e IA Generativa.
 
 <br>
 
