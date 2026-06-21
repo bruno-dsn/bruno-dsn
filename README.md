@@ -33,7 +33,7 @@
 ```python
 bruno = {
     "nome"          : "Bruno da Silva Nunes",
-    "cargo"         : "Analista de Dados",
+    "cargo"         : "Cientista de Dados",
     "localização"   : "São Paulo, SP 🇧🇷",
     "foco"          : ["Análise de Dados", "Machine Learning", "IA Generativa"],
     "ferramentas"   : ["Python", "SQL", "Power BI", "Pandas", "Scikit-Learn"],
@@ -50,7 +50,7 @@ bruno = {
 
 ## 🎓 Pós-Tech AI Scientist — FIAP + Alura
 
-> Especialização de 360h em Ciência de Dados com IA, em 5 fases (início Jun/2026):
+> Especialização em Ciência de Dados com IA, em 5 fases:
 
 | Fase | O que vou aprender |
 |---|---|
