@@ -50,18 +50,17 @@ Foco atual: **Ciência de Dados** e **Inteligência Artificial**, cursando a Pó
 
 <br>
 
-### 📁 Projetos em destaque
+### 🗂️ Projetos em destaque
 
-> Atualizado automaticamente via GitHub Actions ([`scripts/update_readme.py`](scripts/update_readme.py))
+> Atualizado automaticamente todos os dias via GitHub Actions ([`scripts/update_readme.py`](scripts/update_readme.py)). Para adicionar um projeto novo, basta incluir o nome dele em [`scripts/featured_repos.json`](scripts/featured_repos.json).
 
 <!-- PROJECTS:START -->
 | Projeto | Descrição | Linguagem |
 |---|---|---|
-| [Classificação de Risco de Crédito](https://github.com/bruno-dsn/credit-score-prediction-ml) | Pipeline de Machine Learning (CRISP-DM) para previsão de inadimplência | Python |
-| [Painel de Preços de Ações (B3)](https://github.com/bruno-dsn/painel-precos-acoes) | App em Streamlit com dados via yfinance, cache e exportação em CSV | Python |
-| [Análise de Cancelamento de Clientes](https://github.com/bruno-dsn/analise-cancelamentos) | EDA sobre churn, com recomendações de retenção | Jupyter Notebook |
-| [ML Metrics Calculator](https://github.com/bruno-dsn/ml-metrics-calculator) | Cálculo e interpretação de métricas de classificação e regressão | Python |
-| [SQL no Aeroporto de Dados](https://github.com/bruno-dsn/sql-guia-visual) | Guia visual e interativo de SQL para iniciantes | HTML |
+| [credit-score-prediction-ml](https://github.com/bruno-dsn/credit-score-prediction-ml) | Projeto de Machine Learning em Python para previsão de score de crédito utilizando Scikit-Learn. | Jupyter Notebook |
+| [analise-cancelamentos](https://github.com/bruno-dsn/analise-cancelamentos) | Análise de dados de cancelamento com Python. | Jupyter Notebook |
+| [painel-precos-acoes](https://github.com/bruno-dsn/painel-precos-acoes) | App em Streamlit com dados via yfinance, cache de 1 hora e exportação em CSV. | Python |
+| [sql-guia-visual](https://github.com/bruno-dsn/sql-guia-visual) | Guia visual e interativo para aprender SQL usando analogias de um aeroporto de dados. | HTML |
 <!-- PROJECTS:END -->
 
 <br>
@@ -101,9 +100,9 @@ formacao = {
 
 <br>
 
-### 📋 Aberto a oportunidades
+### ✅ Aberto a oportunidades
 
-Estou aberto a oportunidades em **Ciência de Dados**, **Machine Learning** e **Inteligência Artificial**, além de conversas sobre projetos e tecnologia.
+Estou em busca da minha primeira oportunidade em **Ciência de Dados** e **Inteligência Artificial**: estágio, programa de trainee ou vaga júnior. Se você tem um desafio interessante envolvendo dados, terei prazer em conversar.
 
 <div align="center">
 
