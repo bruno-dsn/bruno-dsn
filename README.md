@@ -1,91 +1,70 @@
-# Olá, eu sou o Bruno Nunes 👋
+# Bruno Nunes
 
-Sou profissional de Tecnologia com foco em **Ciência de Dados, Machine Learning e Inteligência Artificial**.
+> Data Science • Machine Learning • Artificial Intelligence
 
-Atualmente desenvolvo projetos práticos utilizando Python, SQL e ferramentas do ecossistema de Data Science, buscando transformar dados em soluções que apoiam decisões e resolvem problemas reais.
+Desenvolvo aplicações voltadas para Ciência de Dados e Inteligência Artificial utilizando Python, SQL e Machine Learning, com foco em resolver problemas através de dados e construir soluções bem documentadas, organizadas e próximas das práticas utilizadas no mercado.
 
-Aqui no GitHub compartilho minha evolução através de projetos, estudos e aplicações voltadas para análise de dados, aprendizado de máquina e IA.
-
-## 💼 Interesse profissional
-
-Tenho interesse em oportunidades nas áreas de **Ciência de Dados, Machine Learning e Inteligência Artificial**, contribuindo com projetos que utilizem dados para gerar valor, apoiar decisões e desenvolver soluções inteligentes.
-
-## 🛠️ Tecnologias
-
-**Linguagens**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-
-**Data Science**
-
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-
-**Visualização**
-
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square)
-
-**Ferramentas**
-
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+Atualmente estou expandindo meu portfólio com projetos que envolvem análise de dados, visualização, Machine Learning, automação e IA.
 
 ---
 
-## 📂 Projetos em destaque
+## Atualmente
 
-### ML Metrics Calculator *(Em desenvolvimento)*
-
-Aplicação desenvolvida em Python e Streamlit para avaliação de modelos de Machine Learning por meio de métricas, gráficos e explicações sobre quando cada indicador deve ou não ser utilizado.
-
-**Tecnologias**
-
-Python • Streamlit • Scikit-Learn • Pandas • NumPy • Matplotlib
+- Desenvolvendo o **ML Metrics Calculator**
+- Estudando Machine Learning e Inteligência Artificial
+- Aprimorando projetos para portfólio
+- Compartilhando minha evolução através do GitHub
 
 ---
 
-### Reforma Tributária 2026
+## Tecnologias
 
-Projeto de análise de dados utilizando processamento, tratamento e visualização para explorar os impactos da Reforma Tributária brasileira.
+<p>
 
-**Tecnologias**
+<img src="https://skillicons.dev/icons?i=python,git,github,vscode,docker"/>
 
-Python • BigQuery • Looker Studio
+</p>
 
----
-
-## 📚 Formação
-
-- Pós-Tech AI Scientist — FIAP *(2026–2027)*
-- Formação Analista de Dados — EBAC
-
-### Certificações
-
-- Python Essentials 1
-- Data Analytics Essentials
-- Power BI
-- Agentes de IA com n8n
+| Data Science | Visualização | Banco de Dados |
+|--------------|-------------|----------------|
+| Pandas | Streamlit | SQL |
+| NumPy | Power BI | BigQuery |
+| Scikit-Learn | Matplotlib | SQLite |
 
 ---
 
-## 📈 Estatísticas
+## Projetos
+
+> Esta seção é atualizada automaticamente com meus repositórios mais recentes.
+
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
+
+---
+
+## Estatísticas
 
 <p align="center">
-  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=bruno-dsn&show_icons=true&theme=transparent"/>
-  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-dsn&layout=compact&theme=transparent"/>
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=bruno-dsn&show_icons=true&hide_border=true&theme=transparent"/>
+
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-dsn&layout=compact&hide_border=true&theme=transparent"/>
+
 </p>
 
 ---
 
-## 📫 Contato
+## Formação
+
+- Pós-Tech AI Scientist • FIAP
+- Formação Analista de Dados • EBAC
+
+---
+
+## Contato
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bruno%20Nunes-0A66C2?style=flat-square&logo=linkedin)](https://linkedin.com/in/bruno-dsnunes)
 
 📧 **brdsnunes@gmail.com**
 
-Se você trabalha com **Ciência de Dados**, **Machine Learning** ou **Inteligência Artificial**, será um prazer trocar experiências, conversar sobre projetos ou conhecer oportunidades na área.
+Estou aberto a oportunidades em **Ciência de Dados**, **Machine Learning** e **Inteligência Artificial**, além de conversas sobre projetos e tecnologia.
