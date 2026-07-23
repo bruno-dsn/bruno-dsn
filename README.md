@@ -1,111 +1,180 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a6bdc,100:1d9e75&height=160&section=header&text=Bruno%20Nunes&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Ciência%20de%20Dados%20·%20Machine%20Learning%20·%20IA&descAlignY=58&descSize=18" width="100%"/>
+# bruno-dsn
 
-<a href="https://www.linkedin.com/in/bruno-dsnunes/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-<a href="mailto:brdsnunes@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<img src="https://img.shields.io/badge/São%20Paulo,%20BR-1d9e75?style=for-the-badge&logo=googlemaps&logoColor=white"/>
+<samp>dados → modelos → decisões</samp>
 
-</div>
-
-<br>
-
-De doze anos resolvendo problemas técnicos para agora resolvê-los com dados. Construo pipelines, modelos e aplicações em Python, sempre documentados e prontos para produção.
-
-Foco atual: **Ciência de Dados** e **Inteligência Artificial**, cursando a Pós-Tech AI Scientist na FIAP.
-
-<br>
-
-### 🛠️ Stack
-
-<div align="left">
-
-**Linguagens**
-<br>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white"/>
-
-**Dados & Machine Learning**
-<br>
-<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white"/>
-<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/>
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-<img src="https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white"/>
-
-**Visualização & BI**
-<br>
-<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white"/>
-<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black"/>
-<img src="https://img.shields.io/badge/Looker%20Studio-4285F4?style=flat-square&logo=looker&logoColor=white"/>
-
-**Ferramentas & IA**
-<br>
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white"/>
-<img src="https://img.shields.io/badge/BigQuery-4285F4?style=flat-square&logo=googlebigquery&logoColor=white"/>
-<img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white"/>
+![Profile Views](https://komarev.com/ghpvc/?username=bruno-dsn&color=0d1117&style=flat-square&label=)
+![Python](https://img.shields.io/badge/-Python-0d1117?style=flat-square&logo=python&logoColor=3776AB)
+![SQL](https://img.shields.io/badge/-SQL-0d1117?style=flat-square&logo=postgresql&logoColor=4169E1)
+![Streamlit](https://img.shields.io/badge/-Streamlit-0d1117?style=flat-square&logo=streamlit&logoColor=FF4B4B)
+![Docker](https://img.shields.io/badge/-Docker-0d1117?style=flat-square&logo=docker&logoColor=2496ED)
+![Git](https://img.shields.io/badge/-Git-0d1117?style=flat-square&logo=git&logoColor=F05032)
 
 </div>
 
 <br>
 
-### 🗂️ Projetos em destaque
-
-> Atualizado automaticamente todos os dias via GitHub Actions ([`scripts/update_readme.py`](scripts/update_readme.py)). Para adicionar um projeto novo, basta incluir o nome dele em [`scripts/featured_repos.json`](scripts/featured_repos.json).
-
-<!-- PROJECTS:START -->
-| Projeto | Descrição | Linguagem |
-|---|---|---|
-| [credit-score-prediction-ml](https://github.com/bruno-dsn/credit-score-prediction-ml) | Projeto de Machine Learning em Python para previsão de score de crédito utilizando Scikit-Learn. | Jupyter Notebook |
-| [analise-cancelamentos](https://github.com/bruno-dsn/analise-cancelamentos) | Análise de dados de cancelamento com Python. | Jupyter Notebook |
-| [painel-precos-acoes](https://github.com/bruno-dsn/painel-precos-acoes) | App em Streamlit com dados via yfinance, cache de 1 hora e exportação em CSV. | Python |
-| [sql-guia-visual](https://github.com/bruno-dsn/sql-guia-visual) | Guia visual e interativo para aprender SQL usando analogias de um aeroporto de dados. | HTML |
-<!-- PROJECTS:END -->
-
-<br>
-
-### 💻 No terminal
-
-<div align="center">
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&duration=2500&pause=800&color=1D9E75&center=true&vCenter=true&width=560&lines=import+pandas+as+pd;df+%3D+pd.read_csv('dados.csv');model.fit(X_train%2C+y_train);print('Insight+encontrado.')" />
-</div>
-
-<br>
-
-<details>
-<summary><b>🎓 bruno.formacao()</b></summary>
-<br>
-
-```python
-formacao = {
-    "cursando": "Pós-Tech AI Scientist (FIAP)",
-    "concluidos": [
-        "Análise de Dados (EBAC)",
-        "Redes de Computadores (Anhanguera)",
-        "Python Essentials 1 (Cisco)",
-        "Data Analytics Essentials (Cisco)",
-        "Agentes de IA com n8n (Hashtag Treinamentos)",
-    ],
-    "em_progresso": "Power BI (Alura)",
-    "conceitos": [
-        "EDA", "Estatística Aplicada", "Modelagem Preditiva",
-        "Storytelling com Dados", "Prompt Engineering", "Agentes de IA",
-    ],
-    "cafe_por_dia": "☕☕☕",
-}
+```
+> whoami
 ```
 
-</details>
+Trabalho na interseção entre dados, estatística e sistemas de IA —
+transformando bases brutas em modelos que sustentam decisões, e
+modelos em ferramentas que alguém além de mim consegue usar.
+
+Base técnica em redes de computadores, o que molda como penso
+software: menos "dá pra rodar" e mais "o que acontece quando
+escala, falha, ou recebe um dado que eu não previ".
 
 <br>
 
-### ✅ Aberto a oportunidades
+---
 
-Estou em busca da minha primeira oportunidade em **Ciência de Dados** e **Inteligência Artificial**: estágio, programa de trainee ou vaga júnior. Se você tem um desafio interessante envolvendo dados, terei prazer em conversar.
+### Filosofia
+
+```python
+def build(ideia):
+    while not confiavel(ideia):
+        ideia = testar(ideia)
+        ideia = medir(ideia)
+        ideia = simplificar(ideia)
+    return ideia
+```
+
+Três princípios guiam o que eu construo:
+
+- **Métrica sem contexto é ruído.** Acurácia de 95% não significa
+  nada até você saber o que tem nos outros 5%.
+- **Se não tem teste, é palpite.** Código que calcula algo importante
+  merece prova de que calcula certo.
+- **Interface é parte do modelo.** Um modelo que ninguém consegue
+  usar tem o mesmo valor prático de nenhum modelo.
+
+<br>
+
+---
+
+### Foco técnico
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+**Dados & Modelagem**
+- Ciência de Dados & Estatística aplicada
+- Machine Learning (supervisionado, avaliação de modelos)
+- Visualização de dados
+- SQL
+
+</td>
+<td valign="top" width="50%">
+
+**IA & Sistemas**
+- IA Generativa & LLMs
+- Agentes de IA
+- MLOps
+- APIs, Docker, Cloud, automação
+
+</td>
+</tr>
+</table>
+
+<br>
+
+---
+
+### Projetos em destaque
+
+<table>
+<tr>
+<td width="100%">
+
+**[ml-metrics-calculator](https://github.com/bruno-dsn/ml-metrics-calculator)**
+📊 Ferramenta em Streamlit que calcula métricas de classificação e
+regressão e sinaliza quando uma métrica pode estar mascarando um
+problema real — como acurácia alta escondendo recall baixo em dados
+desbalanceados.
+
+`Python` `scikit-learn` `Streamlit` `pytest`
+
+🔗 [App publicado](https://ml-metrics-calculator.streamlit.app)
+
+</td>
+</tr>
+</table>
+
+<br>
+
+---
+
+### Stack
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1d9e75,100:1a6bdc&height=100&section=footer" width="100%"/>
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/SQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
+
+<br>
+
+---
+
+### Trilha
+
+```
+Redes de Computadores  →  fundamentos de sistemas, infraestrutura, como as coisas
+                           se conectam por baixo do capô
+
+Análise de Dados        →  formação em análise de dados (EBAC): estatística
+                           aplicada, SQL, visualização
+
+Pós-Tech AI Scientist   →  Machine Learning, Deep Learning, NLP, IA Generativa
+(FIAP + Alura)             e MLOps — em andamento
+```
+
+<br>
+
+---
+
+### Notas de rodapé
+
+- Prefiro um `assert` a uma esperança.
+- Dataset desbalanceado é a forma mais silenciosa de um modelo mentir.
+- `git commit -m "fix"` é um cheiro; `git commit -m "corrige cálculo
+  de recall em classes minoritárias"` é uma frase completa.
+
+<br>
+
+---
+
+<div align="center">
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=bruno-dsn&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-dsn&layout=compact&theme=tokyonight&hide_border=true)
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=bruno-dsn&theme=tokyonight&hide_border=true)
+
+</div>
+
+<br>
+
+---
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0d1117?style=flat-square&logo=linkedin&logoColor=0A66C2)](https://linkedin.com/in/SEU-USUARIO)
+[![GitHub](https://img.shields.io/badge/-GitHub-0d1117?style=flat-square&logo=github&logoColor=white)](https://github.com/bruno-dsn)
+
+<sub>São Paulo, Brasil</sub>
 
 </div>
