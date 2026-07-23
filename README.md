@@ -50,11 +50,11 @@ Foco atual: **Ciência de Dados** e **Inteligência Artificial**, cursando a Pó
 
 <br>
 
-### 🌱 Em andamento
+### 🐍 Minha atividade
 
-- Pós-Tech AI Scientist, FIAP
-- Prompt Engineering e Agentes de IA (n8n)
-- Power BI, Alura
+<div align="center">
+<img src="https://raw.githubusercontent.com/bruno-dsn/bruno-dsn/output/github-contribution-grid-snake.svg" width="100%"/>
+</div>
 
 <br>
 
@@ -77,16 +77,16 @@ Foco atual: **Ciência de Dados** e **Inteligência Artificial**, cursando a Pó
 ### 📊 Estatísticas
 
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=bruno-dsn&show_icons=true&hide_border=true&theme=transparent&title_color=1a6bdc&icon_color=1d9e75&text_color=333333" width="49%"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-dsn&layout=compact&hide_border=true&theme=transparent&title_color=1a6bdc&text_color=333333" width="35%"/>
+<img src="https://github-readme-stats.vercel.app/api?username=bruno-dsn&show_icons=true&hide_border=true&theme=dark" width="49%"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-dsn&layout=compact&hide_border=true&theme=dark" width="35%"/>
 </div>
 
 <div align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=bruno-dsn&hide_border=true&background=00000000&ring=1a6bdc&fire=1d9e75&currStreakLabel=1a6bdc" width="70%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=bruno-dsn&hide_border=true&theme=dark" width="70%"/>
 </div>
 
 <div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=bruno-dsn&theme=flat&no-frame=true&row=1&margin-w=15&column=6"/>
+<img src="https://github-profile-trophy.vercel.app/?username=bruno-dsn&theme=darkhub&no-frame=true&row=1&column=6"/>
 </div>
 
 <br>
@@ -114,9 +114,7 @@ Foco atual: **Ciência de Dados** e **Inteligência Artificial**, cursando a Pó
 
 ### 📋 Aberto a oportunidades
 
-Buscando minha primeira posição como **Analista de Dados Jr.** ou em programas de **formação e trainee em Ciência de Dados e IA**.
-
-Se você tem um desafio real envolvendo dados, machine learning ou IA, vamos conversar.
+Estou aberto a oportunidades em **Ciência de Dados**, **Machine Learning** e **Inteligência Artificial**, além de conversas sobre projetos e tecnologia.
 
 <div align="center">
 
