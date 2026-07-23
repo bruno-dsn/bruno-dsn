@@ -50,14 +50,6 @@ Foco atual: **Ciência de Dados** e **Inteligência Artificial**, cursando a Pó
 
 <br>
 
-### 🐍 Minha atividade
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/bruno-dsn/bruno-dsn/output/github-contribution-grid-snake.svg" width="100%"/>
-</div>
-
-<br>
-
 ### 📁 Projetos em destaque
 
 > Atualizado automaticamente via GitHub Actions ([`scripts/update_readme.py`](scripts/update_readme.py))
@@ -74,39 +66,36 @@ Foco atual: **Ciência de Dados** e **Inteligência Artificial**, cursando a Pó
 
 <br>
 
-### 📊 Estatísticas
+### 💻 No terminal
 
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=bruno-dsn&show_icons=true&hide_border=true&theme=dark" width="49%"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-dsn&layout=compact&hide_border=true&theme=dark" width="35%"/>
-</div>
-
-<div align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=bruno-dsn&hide_border=true&theme=dark" width="70%"/>
-</div>
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=bruno-dsn&theme=darkhub&no-frame=true&row=1&column=6"/>
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=18&duration=2500&pause=800&color=1D9E75&center=true&vCenter=true&width=560&lines=import+pandas+as+pd;df+%3D+pd.read_csv('dados.csv');model.fit(X_train%2C+y_train);print('Insight+encontrado.')" />
 </div>
 
 <br>
 
 <details>
-<summary><b>🎓 Formação e cursos</b></summary>
+<summary><b>🎓 bruno.formacao()</b></summary>
 <br>
 
-**Formação acadêmica**
-- Pós-Tech AI Scientist, FIAP (em andamento)
-- Formação Profissional em Análise de Dados, EBAC (concluída em janeiro de 2026)
-- Tecnólogo em Redes de Computadores, Faculdade Anhanguera (concluído em 2017)
-
-**Cursos complementares**
-- Python Essentials 1, Cisco
-- Data Analytics Essentials, Cisco
-- Power BI, Alura (em andamento)
-- Agentes de IA com n8n, Hashtag Treinamentos
-
-**Conceitos:** EDA · Estatística Aplicada · Modelagem Preditiva · Storytelling com Dados · Prompt Engineering · Agentes de IA
+```python
+formacao = {
+    "cursando": "Pós-Tech AI Scientist (FIAP)",
+    "concluidos": [
+        "Análise de Dados (EBAC)",
+        "Redes de Computadores (Anhanguera)",
+        "Python Essentials 1 (Cisco)",
+        "Data Analytics Essentials (Cisco)",
+        "Agentes de IA com n8n (Hashtag Treinamentos)",
+    ],
+    "em_progresso": "Power BI (Alura)",
+    "conceitos": [
+        "EDA", "Estatística Aplicada", "Modelagem Preditiva",
+        "Storytelling com Dados", "Prompt Engineering", "Agentes de IA",
+    ],
+    "cafe_por_dia": "☕☕☕",
+}
+```
 
 </details>
 
