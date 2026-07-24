@@ -12,7 +12,7 @@ São Paulo, Brasil
 
 ## Sobre
 
-Transição de carreira de TI para Ciência de Dados, com mais de 12 anos resolvendo problemas técnicos complexos antes disso. Hoje aplico esse raciocínio analítico à construção de pipelines de dados e modelos preditivos. Cursando Pós-Tech AI Scientist (FIAP). Interesse principal: sair da correlação e chegar em modelos que generalizam bem fora da amostra de treino.
+Penso em dados como evidência e em modelos como hipóteses a serem testadas, não verdades absolutas. Mais de 12 anos diagnosticando problemas complexos em sistemas reais me ensinaram a isolar variáveis antes de tirar conclusões, o que hoje aplico a pipelines de dados e modelos preditivos. Entender o business understanding antes da primeira linha de código, validar hipóteses com estatística e medir sucesso pela generalização fora da amostra, não pela acurácia em treino. Aprofundando esse repertório na Pós-Tech AI Scientist (FIAP).
 
 ## Current Focus
 
