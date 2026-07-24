@@ -1,6 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0f0c29,50:302b63,100:24243e&height=120&section=header&text=bruno-dsn&fontColor=64FFDA&fontSize=42&fontAlignY=55&desc=Applied%20Data%20Science%20%26%20Machine%20Learning&descAlignY=80&descColor=8A63D2&descSize=16" width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=rect&amp;color=0:0f0c29,50:302b63,100:24243e&amp;height=120&amp;section=header&amp;text=bruno-dsn&amp;fontColor=64FFDA&amp;fontSize=42&amp;fontAlignY=55&amp;desc=Applied%20Data%20Science%20%26%20Machine%20Learning&amp;descAlignY=80&amp;descColor=8A63D2&amp;descSize=16" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:0f0c29,50:302b63,100:24243e&amp;height=120&amp;section=header&amp;text=bruno-dsn&amp;fontColor=64FFDA&amp;fontSize=42&amp;fontAlignY=55&amp;desc=Applied%20Data%20Science%20%26%20Machine%20Learning&amp;descAlignY=80&amp;descColor=8A63D2&amp;descSize=16" width="100%" alt="bruno-dsn — Applied Data Science &amp; Machine Learning" />
+</picture>
 
 </div>
 
@@ -18,37 +21,15 @@ FIAP, com base prévia em Análise de Dados pela EBAC.
 
 <p align="right"><code>// 02 — research areas</code></p>
 
-<table>
-<tr>
-<td valign="top" width="33%">
+<div align="center">
 
-**Modelagem**
-- Machine Learning
-- Statistical Learning
-- Predictive Modeling
-- Model Evaluation
+**Modelagem** &nbsp; `Machine Learning` `Statistical Learning` `Predictive Modeling` `Model Evaluation`
 
-</td>
-<td valign="top" width="33%">
+**Dados** &nbsp; `EDA` `Feature Engineering` `Data Visualization` `Data Storytelling`
 
-**Dados**
-- Exploratory Data Analysis
-- Feature Engineering
-- Data Visualization
-- Data Storytelling
+**IA aplicada** &nbsp; `Generative AI` `LLM Applications` `AI Agents` `MLOps`
 
-</td>
-<td valign="top" width="33%">
-
-**IA aplicada**
-- Generative AI
-- LLM Applications
-- AI Agents
-- MLOps
-
-</td>
-</tr>
-</table>
+</div>
 
 <br>
 
@@ -64,10 +45,6 @@ FIAP, com base prévia em Análise de Dados pela EBAC.
 
 <p align="right"><code>// 04 — current projects</code></p>
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
 **📊 ML Metrics Calculator**
 
 Aplicação em Python + Streamlit para avaliação de modelos de Machine
@@ -77,11 +54,12 @@ explicações sobre quando uma métrica pode enganar — como acurácia
 alta mascarando recall baixo em dados desbalanceados.
 
 `Python` `scikit-learn` `Streamlit` `pytest`
+&nbsp;·&nbsp;
+[repositório](https://github.com/bruno-dsn/ml-metrics-calculator)
+&nbsp;·&nbsp;
+[app](https://ml-metrics-calculator.streamlit.app)
 
-[repositório](https://github.com/bruno-dsn/ml-metrics-calculator) · [app](https://ml-metrics-calculator.streamlit.app)
-
-</td>
-<td width="50%" valign="top">
+<br>
 
 **📈 Painel de Preços de Ações (B3)**
 
@@ -91,12 +69,8 @@ análise exploratória de dados financeiros e visualização interativa
 de séries de preços.
 
 `Python` `Streamlit` `Pandas` `yfinance` `Matplotlib`
-
+&nbsp;·&nbsp;
 [repositório](https://github.com/bruno-dsn/painel-precos-acoes)
-
-</td>
-</tr>
-</table>
 
 <br>
 
@@ -135,10 +109,16 @@ de séries de preços.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=bruno-dsn&show_icons=true&hide_border=true&bg_color=13131f&title_color=8A63D2&icon_color=00B4D8&text_color=c9d1d9" height="165" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-dsn&layout=compact&hide_border=true&bg_color=13131f&title_color=8A63D2&text_color=c9d1d9" height="165" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=bruno-dsn&bg_color=13131f&color=64FFDA&line=8A63D2&point=00B4D8&hide_border=true" width="100%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=bruno-dsn&amp;show_icons=true&amp;theme=dark&amp;hide_border=true&amp;bg_color=00000000" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=bruno-dsn&amp;show_icons=true&amp;theme=default&amp;hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api?username=bruno-dsn&amp;show_icons=true&amp;theme=dark&amp;hide_border=true" height="165" alt="GitHub Stats de bruno-dsn" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-dsn&amp;layout=compact&amp;theme=dark&amp;hide_border=true&amp;bg_color=00000000" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-dsn&amp;layout=compact&amp;theme=default&amp;hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-dsn&amp;layout=compact&amp;theme=dark&amp;hide_border=true" height="165" alt="Linguagens mais usadas por bruno-dsn" />
+</picture>
 
 </div>
 
