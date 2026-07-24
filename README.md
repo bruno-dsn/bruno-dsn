@@ -1,6 +1,6 @@
 <div align="center">
 
-# Bruno da Silva Nunes
+# Bruno Nunes
 
 **Data Science · Machine Learning · Applied AI**
 
