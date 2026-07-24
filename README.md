@@ -149,7 +149,7 @@ de séries de preços.
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/-bruno--dsn-13131f?style=flat-square&logo=github&logoColor=64FFDA)](https://github.com/bruno-dsn)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-13131f?style=flat-square&logo=linkedin&logoColor=00B4D8)](https://linkedin.com/in/SEU-USUARIO)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-13131f?style=flat-square&logo=linkedin&logoColor=00B4D8)](https://www.linkedin.com/in/bruno-dsnunes/)
 
 <sub>São Paulo, Brasil</sub>
 
