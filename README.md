@@ -1,7 +1,7 @@
 <div align="center">
 
-![banner](https://capsule-render.vercel.app/api?type=rect&color=0:0D1117,50:302b63,100:0D1117&height=120&section=header&text=bruno-dsn&fontColor=64FFDA&fontSize=42&fontAlignY=55&desc=Applied%20Data%20Science%20%26%20Machine%20Learning&descAlignY=80&descColor=00B4D8&descSize=16#gh-dark-mode-only)
-![banner](https://capsule-render.vercel.app/api?type=rect&color=0:F4F6FF,50:E8E4FA,100:F4F6FF&height=120&section=header&text=bruno-dsn&fontColor=302b63&fontSize=42&fontAlignY=55&desc=Applied%20Data%20Science%20%26%20Machine%20Learning&descAlignY=80&descColor=00B4D8&descSize=16#gh-light-mode-only)
+![banner](assets/banner-dark.svg#gh-dark-mode-only)
+![banner](assets/banner-light.svg#gh-light-mode-only)
 
 </div>
 
@@ -21,17 +21,17 @@
 
 <p align="right"><code>// 01 — current focus</code></p>
 
-Trabalho na camada entre dado bruto e decisão: análise exploratória
-para entender o problema, modelagem para generalizar o padrão, e uma
-aplicação para que o resultado saia do notebook e chegue a alguém.
-Atualmente curso a Pós-Tech em Ciência de Dados (AI Scientist) pela
-FIAP, com base prévia em Análise de Dados pela EBAC.
+Base técnica anterior em tecnologia, agora direcionada para Ciência
+de Dados e Machine Learning. Cursando a Pós-Tech em AI Scientist
+(FIAP), com formação prévia em Análise de Dados (EBAC), e
+desenvolvendo projetos próprios para aplicar o que estuda —
+da análise exploratória à publicação de uma aplicação funcional.
 
 <br>
 
 ---
 
-<p align="right"><code>// 02 — research areas</code></p>
+<p align="right"><code>// 02 — focus areas</code></p>
 
 <div align="center">
 
@@ -108,13 +108,26 @@ de séries de preços.
 
 <div align="center">
 
+<sub><strong>Languages</strong></sub><br>
 ![Python](https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=64FFDA)
 ![SQL](https://img.shields.io/badge/SQL-0D1117?style=flat-square&logo=postgresql&logoColor=64FFDA)
+
+<br><br>
+
+<sub><strong>Libraries</strong></sub><br>
 ![Pandas](https://img.shields.io/badge/Pandas-0D1117?style=flat-square&logo=pandas&logoColor=8A63D2)
 ![NumPy](https://img.shields.io/badge/NumPy-0D1117?style=flat-square&logo=numpy&logoColor=8A63D2)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-0D1117?style=flat-square&logo=plotly&logoColor=00B4D8)
 ![scikit--learn](https://img.shields.io/badge/scikit--learn-0D1117?style=flat-square&logo=scikit-learn&logoColor=00B4D8)
+
+<br><br>
+
+<sub><strong>Visualization</strong></sub><br>
+![Matplotlib](https://img.shields.io/badge/Matplotlib-0D1117?style=flat-square&logo=plotly&logoColor=00B4D8)
 ![Streamlit](https://img.shields.io/badge/Streamlit-0D1117?style=flat-square&logo=streamlit&logoColor=FF4B4B)
+
+<br><br>
+
+<sub><strong>Tools</strong></sub><br>
 ![Jupyter](https://img.shields.io/badge/Jupyter-0D1117?style=flat-square&logo=jupyter&logoColor=F37626)
 ![Docker](https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=2496ED)
 ![Git](https://img.shields.io/badge/Git-0D1117?style=flat-square&logo=git&logoColor=8A63D2)
@@ -136,6 +149,8 @@ de séries de preços.
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-dsn&layout=compact&theme=dark&hide_border=true&bg_color=0D1117#gh-dark-mode-only)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-dsn&layout=compact&theme=default&hide_border=true#gh-light-mode-only)
+
+<sub>Caso as imagens acima não carreguem: é a instância pública e gratuita do serviço,<br>não um problema no seu README — veja a explicação abaixo.</sub>
 
 </div>
 
