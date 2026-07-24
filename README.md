@@ -2,7 +2,7 @@
 
 # Bruno da Silva Nunes
 
-### Data Science • Machine Learning • Artificial Intelligence
+### Data Science • Machine Learning • Inteligência Artificial
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3500&pause=1000&color=64FFDA&center=true&vCenter=true&width=700&lines=Building+Machine+Learning+Projects;Applied+Data+Science;Python+%7C+SQL+%7C+Streamlit;Generative+AI+%7C+LLMs;Always+Learning+Something+New"/>
 
@@ -10,77 +10,31 @@
 
 ---
 
-## 👋 Sobre
+## Sobre
 
-Tenho uma base sólida em tecnologia e atualmente direciono minha carreira para **Ciência de Dados** e **Inteligência Artificial**.
+Profissional de tecnologia com mais de 12 anos de experiência em TI e suporte técnico, atualmente em transição para Ciência de Dados e Inteligência Artificial.
 
-Atualmente curso a **Pós-Tech AI Scientist (FIAP)** e possuo formação prévia em **Análise de Dados (EBAC)**.
+Curso a Pós-Tech AI Scientist na FIAP e tenho formação em Análise de Dados pela EBAC. Meu foco é transformar dados em decisões usando Python, SQL, Machine Learning, visualização de dados e aplicações com Streamlit.
 
-Meu foco é desenvolver soluções que transformem dados em decisões, utilizando **Python**, **SQL**, **Machine Learning**, **Visualização de Dados** e aplicações com **Streamlit**.
-
-Estou constantemente desenvolvendo projetos próprios para evoluir minhas habilidades em Engenharia de Dados, Machine Learning e IA aplicada.
-## ⚙️ Tech Stack
+## Tech Stack
 
 <div align="center">
 
-### Languages
+**Linguagens**
 
 <img src="https://skillicons.dev/icons?i=python,postgresql,bash&theme=dark"/>
 
-<br><br>
-
-### Data Science
+**Data Science**
 
 <img src="https://go-skill-icons.vercel.app/api/icons?i=pandas,numpy,sklearn,jupyter"/>
 
-<br><br>
-
-### Tools
+**Ferramentas**
 
 <img src="https://skillicons.dev/icons?i=git,github,vscode,docker&theme=dark"/>
 
 </div>
-## 🧠 Focus Areas
 
-<table>
-<tr>
-
-<td width="33%" valign="top">
-
-### 📊 Data Science
-
-- Exploratory Data Analysis
-- Data Visualization
-- Statistical Analysis
-- Feature Engineering
-
-</td>
-
-<td width="33%" valign="top">
-
-### 🤖 Machine Learning
-
-- Supervised Learning
-- Model Evaluation
-- Predictive Modeling
-- Scikit-Learn
-
-</td>
-
-<td width="33%" valign="top">
-
-### 🚀 Artificial Intelligence
-
-- Generative AI
-- LLM Applications
-- AI Agents
-- MLOps (Learning)
-
-</td>
-
-</tr>
-</table>
-## 🚀 Machine Learning Workflow
+## Fluxo de trabalho em Machine Learning
 
 ```text
 Business Understanding
@@ -109,56 +63,52 @@ Deployment
           ▼
 Monitoring
 ```
-## 📂 Featured Projects
 
-### 📊 ML Metrics Calculator
+## Projetos em destaque
 
-Aplicação desenvolvida em **Python + Streamlit** para avaliação de modelos de Machine Learning.
+### Painel de Preços da B3
 
-**Principais recursos**
+Dashboard interativo em Streamlit para acompanhar a evolução de preços de ações da B3, com comparação entre múltiplos ativos, cache de dados e exportação em CSV.
 
-- Métricas para Classificação
-- Métricas para Regressão
-- ROC Curve
-- Precision-Recall Curve
-- Confusion Matrix
-- Explicações sobre interpretação das métricas
+**Tecnologias:** `Python` `Streamlit` `Pandas` `yfinance`
 
-**Tecnologias**
+- Repositório: https://github.com/bruno-dsn/painel-precos-acoes
 
-`Python` `Scikit-Learn` `Streamlit` `Pytest`
+### Calculadora de Métricas de Machine Learning
 
-🔗 Repositório:
-https://github.com/bruno-dsn/ml-metrics-calculator
+Ferramenta interativa que recebe um CSV com valores reais e previstos e calcula métricas de classificação binária, multiclasse e regressão, com alertas automáticos para métricas enganosas e visualizações (matriz de confusão, curva ROC, curva Precision-Recall).
 
-🌐 Aplicação:
-https://ml-metrics-calculator.streamlit.app
+**Tecnologias:** `Python` `Scikit-learn` `Streamlit` `Pytest`
 
----
+- Repositório: https://github.com/bruno-dsn/ml-metrics-calculator
+- Aplicação: https://ml-metrics-calculator.streamlit.app
 
-### 📈 Painel de Preços da B3
+### Classificação de Risco de Crédito
 
-Dashboard interativo para análise exploratória de ativos negociados na Bolsa Brasileira.
+Pipeline completo de Machine Learning seguindo o ciclo CRISP-DM para prever risco de inadimplência de clientes, apoiando decisões de concessão de crédito.
 
-**Tecnologias**
+**Tecnologias:** `Python` `Pandas` `NumPy` `Scikit-learn`
 
-`Python` `Pandas` `Matplotlib` `Streamlit` `yfinance`
+- Repositório: (adicionar link)
 
-🔗 Repositório
+### Análise de Cancelamento de Clientes (Churn)
 
-https://github.com/bruno-dsn/painel-precos-acoes
+Análise exploratória para identificar padrões de cancelamento e traduzir os achados em recomendações de negócio para retenção de clientes.
 
-## 📚 Atualmente Estudando
+**Tecnologias:** `Python` `Pandas` `NumPy` `Visualização de dados`
+
+- Repositório: (adicionar link)
+
+## Atualmente estudando
 
 - Deep Learning
 - Natural Language Processing (NLP)
-- Generative AI
-- Large Language Models (LLMs)
+- Generative AI e LLMs
 - AI Agents
-- MLOps
-- Deploy de Modelos
+- MLOps e deploy de modelos
 - CRISP-DM
-## 📊 GitHub Analytics
+
+## GitHub Analytics
 
 <div align="center">
 
@@ -168,49 +118,7 @@ https://github.com/bruno-dsn/painel-precos-acoes
 
 </div>
 
-## 💻 Terminal
-
-```bash
-$ whoami
-
-Bruno da Silva Nunes
-
-Location: São Paulo, Brazil
-
-Role: Data Scientist (in progress)
-
-Education:
-
-- FIAP | AI Scientist
-- EBAC | Data Analytics
-
-----------------------------------------
-
-$ current_focus
-
-Python
-
-SQL
-
-Machine Learning
-
-Generative AI
-
-Streamlit
-
-----------------------------------------
-
-$ status
-
-Learning.
-
-Building.
-
-Improving.
-
-Open to opportunities.
-```
-## 🤝 Connect with me
+## Connect
 
 <div align="center">
 
@@ -221,13 +129,5 @@ Open to opportunities.
 <a href="https://www.linkedin.com/in/bruno-dsnunes/">
 <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
 </a>
-
-</div>
-
----
-
-<div align="center">
-
-⭐ Thanks for visiting my profile!
 
 </div>
