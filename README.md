@@ -73,7 +73,7 @@ Acompanhar múltiplos ativos da B3 ao longo do tempo exige mais do que olhar pre
 
 `Python` `Pandas` `Streamlit` `yfinance`
 
-[Repositório](https://github.com/bruno-dsn/painel-precos-acoes)
+[Repositório](https://github.com/bruno-dsn/painel-precos-acoes)· [Aplicação](https://painel-precos-acoes.streamlit.app/)
 
 ---
 
