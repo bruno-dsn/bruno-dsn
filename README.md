@@ -1,84 +1,134 @@
 <div align="center">
 
-# Bruno Nunes
+Bruno Nunes
 
-**Data Science · Machine Learning · Applied AI**
+Ciência de Dados | Machine Learning | Análise de Dados
+
+Estudante da Pós-Tech AI Scientist na FIAP, desenvolvendo projetos de dados com foco em análise, modelagem e comunicação de resultados.
+
+
 
 São Paulo, Brasil
 
 </div>
 
----
+Sobre mim
 
-## Sobre
+Estou em transição de carreira para Ciência de Dados, construindo uma base prática em Python, SQL, estatística, Machine Learning e visualização de dados.
 
-Penso em dados como evidência e em modelos como hipóteses a serem testadas, não verdades absolutas. Mais de 12 anos diagnosticando problemas complexos em sistemas reais me ensinaram a isolar variáveis antes de tirar conclusões, o que hoje aplico a pipelines de dados e modelos preditivos. Entender o business understanding antes da primeira linha de código, validar hipóteses com estatística e medir sucesso pela generalização fora da amostra, não pela acurácia em treino. Aprofundando esse repertório na Pós-Tech AI Scientist (FIAP).
+Minha trajetória anterior em tecnologia e suporte fortaleceu competências que aplico hoje em projetos de dados: investigação de problemas, organização de informações, comunicação com diferentes públicos e busca por soluções simples e verificáveis.
 
-## Current Focus
+No meu portfólio, procuro desenvolver projetos completos e reproduzíveis. Além do código, documento o problema, a origem dos dados, as decisões tomadas, as métricas, os limites da análise e as possíveis evoluções.
 
-- Model evaluation além da acurácia: precision, recall, F1-score e curvas ROC em cenários de classes desbalanceadas
-- Cross validation e generalization como critérios de decisão, não como etapa opcional
-- Explainability aplicada a modelos de classificação
-- Deploy de modelos e fundamentos de MLOps
-- Large Language Models e AI Agents
+Projetos em destaque
 
-## Core Technologies
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Risco de crédito</h3>
+      <p>Pipeline de classificação com regressão logística, pré-processamento e balanceamento de classes, treinado com 1.000 registros da base South German Credit.</p>
+      <p><strong>Resultados:</strong> 75,6% de acurácia, 76,0% de recall para risco ruim e ROC AUC de 0,813.</p>
+      <p><code>Python</code> <code>Pandas</code> <code>Scikit-learn</code> <code>Streamlit</code></p>
+      <a href="https://github.com/bruno-dsn/credit-score-prediction-ml">Ver repositório</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Calculadora de métricas de Machine Learning</h3>
+      <p>Aplicação que recebe resultados de modelos e calcula métricas para classificação binária, multiclasse e regressão.</p>
+      <p>Inclui matriz de confusão, curvas ROC e Precision-Recall, alertas de interpretação e testes automatizados dos cálculos.</p>
+      <p><code>Python</code> <code>Scikit-learn</code> <code>Streamlit</code> <code>Pytest</code></p>
+      <a href="https://github.com/bruno-dsn/ml-metrics-calculator">Ver repositório</a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Painel de preços de ações da B3</h3>
+      <p>Dashboard para consultar e comparar a evolução de ativos da B3 em diferentes períodos.</p>
+      <p>A aplicação consome dados públicos, utiliza cache para reduzir requisições e permite exportar os resultados em CSV.</p>
+      <p><code>Python</code> <code>Pandas</code> <code>Streamlit</code> <code>yfinance</code></p>
+      <a href="https://github.com/bruno-dsn/painel-precos-acoes">Ver repositório</a>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Abandono escolar no ensino médio</h3>
+      <p>Análise de 4.105 registros das Taxas de Rendimento Escolar do Inep, cobrindo Brasil, regiões e UFs entre 2019 e 2025.</p>
+      <p>O painel acompanha aprovação, reprovação e abandono, com filtros geográficos e comparação temporal.</p>
+      <p><code>Python</code> <code>Pandas</code> <code>Streamlit</code> <code>Dados públicos</code></p>
+      <a href="https://github.com/bruno-dsn/analise-evasao-escolar">Ver repositório</a>
+    </td>
+  </tr>
+</table>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+Outros projetos
 
-## Machine Learning Workflow
+Análise de cancelamentos de clientes: análise exploratória de 49.996 registros, comparação de taxas e lift por segmento e investigação de possíveis problemas de qualidade dos dados.
 
-```text
-Business Understanding
-        │
-        ▼
-Data Collection & Cleaning
-        │
-        ▼
-Exploratory Data Analysis
-        │
-        ▼
-Feature Engineering
-        │
-        ▼
-Model Training & Cross Validation
-        │
-        ▼
-Model Evaluation
-        │
-        ▼
-Deployment
-```
+Análise de desempenho de e-commerce: cenário reproduzível com 1.800 pedidos e painel de receita, ticket médio, margem bruta, categorias e canais.
 
-## Featured Projects
+Reforma tributária 2026: aplicação didática que separa fatos oficiais de simulações sobre CBS, IBS e o período de transição.
 
-### ML Metrics Calculator
+Automação de cadastro de produtos: validação de dados em CSV e automação de formulário com Playwright, confirmação explícita e registro das execuções.
 
-Métricas de avaliação de modelo raramente contam a história completa. Um modelo com 95% de acurácia pode estar simplesmente prevendo a classe majoritária. Este projeto nasceu desse problema: uma ferramenta que recebe valores reais e previstos e calcula precision, recall, F1-score, curva ROC e curva Precision-Recall para classificação binária, multiclasse e regressão, sinalizando automaticamente quando uma métrica isolada pode enganar.
+Guia visual de SQL: material interativo para apresentar conceitos de SQL por meio de exemplos visuais.
 
-`Python` `scikit-learn` `Streamlit` `Pytest`
+Tecnologias
 
-[Repositório](https://github.com/bruno-dsn/ml-metrics-calculator) · [Aplicação](https://ml-metrics-calculator.streamlit.app)
+Linguagens e análise
 
-### Painel de Preços da B3
 
-Acompanhar múltiplos ativos da B3 ao longo do tempo exige mais do que olhar preços isolados, exige comparação, contexto e um pipeline de dados que não recalcule tudo a cada interação. Este dashboard consome dados públicos de mercado, aplica cache para manter a exploração responsiva e permite comparar a evolução de diferentes ativos lado a lado.
 
-`Python` `Pandas` `Streamlit` `yfinance`
+Visualização e aplicações
 
-[Repositório](https://github.com/bruno-dsn/painel-precos-acoes)· [Aplicação](https://painel-precos-acoes.streamlit.app/)
 
----
+
+Ferramentas e plataformas
+
+
+
+Como desenvolvo um projeto de dados
+
+Entendo o problema e defino o que precisa ser medido.
+
+Verifico a origem, a estrutura e as limitações dos dados.
+
+Realizo a limpeza e a análise exploratória.
+
+Construo uma solução compatível com o problema, sem adicionar complexidade desnecessária.
+
+Avalio os resultados com métricas adequadas e testes reproduzíveis.
+
+Comunico conclusões, incertezas e próximos passos por meio de documentação e visualizações.
+
+Formação
+
+Pós-Tech AI Scientist, FIAP: em andamento.
+
+Formação Profissional em Análise de Dados, EBAC: concluída em janeiro de 2026.
+
+Tecnólogo em Redes de Computadores, Faculdade Anhanguera: concluído em 2017.
+
+Em desenvolvimento
+
+Atualmente estou aprofundando meus conhecimentos em:
+
+avaliação de modelos em conjuntos desbalanceados;
+
+validação cruzada e capacidade de generalização;
+
+interpretabilidade de modelos;
+
+publicação de aplicações e fundamentos de MLOps;
+
+Large Language Models e agentes de IA.
+
+Contato
+
+Estou aberto a oportunidades em Análise de Dados, Ciência de Dados e Machine Learning, especialmente em ambientes nos quais eu possa aprender, contribuir com projetos reais e evoluir tecnicamente.
+
+LinkedIn
+
+E-mail
 
 <div align="center">
 
-[GitHub](https://github.com/bruno-dsn) · [LinkedIn](https://www.linkedin.com/in/bruno-dsnunes/)
+Projetos construídos com foco em clareza, reprodutibilidade e aprendizado contínuo.
 
 </div>
