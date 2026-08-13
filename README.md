@@ -11,6 +11,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/bruno-dsnunes/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=00F5D4&labelColor=0d1117" /></a>
   <a href="mailto:brdsnunes@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=00F5D4&labelColor=0d1117" /></a>
+  <a href="https://share.streamlit.io/user/bruno-dsn"><img src="https://img.shields.io/badge/Streamlit-Apps-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=00F5D4&labelColor=0d1117" /></a>
   <img src="https://img.shields.io/badge/São_Paulo,_BR-8fd3ff?style=for-the-badge&logo=googlemaps&logoColor=0d1117&labelColor=0d1117" />
 </p>
 
