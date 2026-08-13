@@ -36,17 +36,17 @@ status:      🟢 aberto a oportunidades e a boas conversas sobre dados
 ### `> tech_stack --all`
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,scikitlearn,pandas,fastapi,docker,git,github,githubactions,postgres,sqlite,vscode,jupyter&theme=dark" />
+  <img src="https://skillicons.dev/icons?i=python,scikitlearn,pandas,sqlite,git,github,vscode&theme=dark" />
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" />
-  <img src="https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/Prefect-070E10?style=flat-square&logo=prefect&logoColor=white" />
-  <img src="https://img.shields.io/badge/Polars-CD792C?style=flat-square&logo=polars&logoColor=white" />
+  <img src="https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white" />
+  <img src="https://img.shields.io/badge/Altair-1F77B4?style=flat-square" />
+  <img src="https://img.shields.io/badge/yfinance-8B5CF6?style=flat-square" />
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" />
+  <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" />
   <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" />
-  <img src="https://img.shields.io/badge/Matplotlib-11557c?style=flat-square&logo=plotly&logoColor=white" />
 </p>
 
 ---
@@ -57,32 +57,32 @@ status:      🟢 aberto a oportunidades e a boas conversas sobre dados
 <tr>
 <td width="50%" valign="top">
 
-**🧮 [ML Metrics Calculator](https://github.com/bruno-dsn/ml-metrics-calculator)**
-Toolkit educacional em Streamlit que calcula e explica métricas de classificação (accuracy, precision, recall, F1, ROC/PR) e regressão a partir de um CSV — com avisos quando uma métrica pode enganar.
-`Python` `Streamlit` `Scikit-Learn` `Testes unitários`
+**💳 [Laboratório de Risco de Crédito](https://github.com/bruno-dsn/credit-score-prediction-ml)**
+Simulador que estima probabilidade de inadimplência a partir de renda, valor solicitado, score e histórico do cliente, com explicação dos fatores por trás de cada decisão. ROC AUC 0,882 · acurácia 89,3%.
+`Python` `Streamlit` `Scikit-Learn` `Pytest`
 
 </td>
 <td width="50%" valign="top">
 
-**📈 [Painel de Preços de Ações (B3)](https://github.com/bruno-dsn/painel-precos-acoes)**
-Dashboard interativo para acompanhar ações da bolsa brasileira em tempo real, com histórico via `yfinance` e indicadores visuais.
-`Python` `Streamlit` `yfinance` `Pandas`
+**📉 [Laboratório de Retenção de Clientes](https://github.com/bruno-dsn/analise-cancelamentos)**
+Estima o risco de cancelamento nos próximos 60 dias e simula o retorno (ROI) de campanhas de retenção por segmento. ROC AUC 0,788 em base de 12 mil clientes.
+`Python` `Streamlit` `Scikit-Learn` `Pytest`
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-**💳 [Credit Score Prediction](https://github.com/bruno-dsn/credit-score-prediction-ml)**
-Modelo de Machine Learning para prever score de crédito de clientes.
-`Python` `Scikit-Learn` `Jupyter`
+**🧮 [Calculadora de Métricas de ML](https://github.com/bruno-dsn/ml-metrics-calculator)** · [🚀 app publicado](https://ml-metrics-calculator.streamlit.app/)
+Calcula e explica métricas de classificação e regressão (matriz de confusão, ROC, Precision-Recall), com limiar ajustável e alerta de desbalanceamento.
+`Python` `Streamlit` `Scikit-Learn` `Altair`
 
 </td>
 <td width="50%" valign="top">
 
-**🎓 [Análise de Evasão Escolar](https://github.com/bruno-dsn/analise-evasao-escolar)**
-Análise exploratória com dados públicos do Inep para entender a evasão no ensino médio brasileiro entre 2019 e 2025.
-`Python` `Pandas` `Jupyter`
+**📈 [Painel de Desempenho e Risco da B3](https://github.com/bruno-dsn/painel-precos-acoes)** · [🚀 app publicado](https://painel-precos-acoes.streamlit.app/)
+Compara até 5 ações da B3 e o Ibovespa com retorno, volatilidade e drawdown, normalizando tudo em base 100 para evitar comparações enganosas.
+`Python` `Streamlit` `yfinance` `Altair`
 
 </td>
 </tr>
@@ -92,14 +92,49 @@ Análise exploratória com dados públicos do Inep para entender a evasão no en
 
 ---
 
+### `> monitor --repos --status`
+
+<table>
+<tr><th>Repositório</th><th>Status do app</th><th>Último commit</th><th>Linguagem</th></tr>
+<tr>
+<td><a href="https://github.com/bruno-dsn/credit-score-prediction-ml">credit-score-prediction-ml</a></td>
+<td><img src="https://img.shields.io/badge/local-Streamlit-8fd3ff?style=flat-square"/></td>
+<td><img src="https://img.shields.io/github/last-commit/bruno-dsn/credit-score-prediction-ml?style=flat-square&color=00F5D4&label=%20"/></td>
+<td><img src="https://img.shields.io/github/languages/top/bruno-dsn/credit-score-prediction-ml?style=flat-square&color=8fd3ff&label=%20"/></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bruno-dsn/analise-cancelamentos">analise-cancelamentos</a></td>
+<td><img src="https://img.shields.io/badge/local-Streamlit-8fd3ff?style=flat-square"/></td>
+<td><img src="https://img.shields.io/github/last-commit/bruno-dsn/analise-cancelamentos?style=flat-square&color=00F5D4&label=%20"/></td>
+<td><img src="https://img.shields.io/github/languages/top/bruno-dsn/analise-cancelamentos?style=flat-square&color=8fd3ff&label=%20"/></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bruno-dsn/ml-metrics-calculator">ml-metrics-calculator</a></td>
+<td><a href="https://ml-metrics-calculator.streamlit.app/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fml-metrics-calculator.streamlit.app%2F&style=flat-square&up_message=online&up_color=00F5D4&label=app"/></a></td>
+<td><img src="https://img.shields.io/github/last-commit/bruno-dsn/ml-metrics-calculator?style=flat-square&color=00F5D4&label=%20"/></td>
+<td><img src="https://img.shields.io/github/languages/top/bruno-dsn/ml-metrics-calculator?style=flat-square&color=8fd3ff&label=%20"/></td>
+</tr>
+<tr>
+<td><a href="https://github.com/bruno-dsn/painel-precos-acoes">painel-precos-acoes</a></td>
+<td><a href="https://painel-precos-acoes.streamlit.app/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fpainel-precos-acoes.streamlit.app%2F&style=flat-square&up_message=online&up_color=00F5D4&label=app"/></a></td>
+<td><img src="https://img.shields.io/github/last-commit/bruno-dsn/painel-precos-acoes?style=flat-square&color=00F5D4&label=%20"/></td>
+<td><img src="https://img.shields.io/github/languages/top/bruno-dsn/painel-precos-acoes?style=flat-square&color=8fd3ff&label=%20"/></td>
+</tr>
+</table>
+
+<p align="center"><i>🟢 badges atualizados em tempo real pelo shields.io — o "app online" checa a URL de verdade a cada visita</i></p>
+
+---
+
 ### `> ls repositórios/ --group-by=área`
 
 | Área | Repositórios |
 |---|---|
-| 🤖 **Machine Learning** | [ml-metrics-calculator](https://github.com/bruno-dsn/ml-metrics-calculator) · [credit-score-prediction-ml](https://github.com/bruno-dsn/credit-score-prediction-ml) |
-| 📊 **Análise de Dados** | [analise-evasao-escolar](https://github.com/bruno-dsn/analise-evasao-escolar) · [analise-cancelamentos](https://github.com/bruno-dsn/analise-cancelamentos) · [ecommerce-analise-graficos](https://github.com/bruno-dsn/ecommerce-analise-graficos) · [reforma-tributaria-2026](https://github.com/bruno-dsn/reforma-tributaria-2026) |
-| 📈 **Dados em Tempo Real** | [painel-precos-acoes](https://github.com/bruno-dsn/painel-precos-acoes) |
-| ⚙️ **Automação & Fundamentos** | [Automacao-de-Tarefas](https://github.com/bruno-dsn/Automacao-de-Tarefas) · [sql-guia-visual](https://github.com/bruno-dsn/sql-guia-visual) · [calculadora-python](https://github.com/bruno-dsn/calculadora-python) |
+| 🤖 **Machine Learning** | [credit-score-prediction-ml](https://github.com/bruno-dsn/credit-score-prediction-ml) · [analise-cancelamentos](https://github.com/bruno-dsn/analise-cancelamentos) · [ml-metrics-calculator](https://github.com/bruno-dsn/ml-metrics-calculator) |
+| 📊 **Análise de Dados** | [analise-evasao-escolar](https://github.com/bruno-dsn/analise-evasao-escolar) · [ecommerce-analise-graficos](https://github.com/bruno-dsn/ecommerce-analise-graficos) · [reforma-tributaria-2026](https://github.com/bruno-dsn/reforma-tributaria-2026) |
+| 📈 **Mercado Financeiro** | [painel-precos-acoes](https://github.com/bruno-dsn/painel-precos-acoes) |
+| ⚙️ **Automação & Qualidade de Dados** | [Automacao-de-Tarefas](https://github.com/bruno-dsn/Automacao-de-Tarefas) |
+| 📘 **Fundamentos** | [sql-guia-visual](https://github.com/bruno-dsn/sql-guia-visual) |
 
 ---
 
