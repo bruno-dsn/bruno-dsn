@@ -80,9 +80,9 @@ Modelo de Machine Learning para prever score de crédito de clientes.
 </td>
 <td width="50%" valign="top">
 
-**✈️ [SQL no Aeroporto de Dados](https://github.com/bruno-dsn/sql-guia-visual)**
-Guia visual e interativo de SQL para iniciantes, usando a analogia de um aeroporto para explicar queries.
-`SQL` `HTML` `CSS`
+**🎓 [Análise de Evasão Escolar](https://github.com/bruno-dsn/analise-evasao-escolar)**
+Análise exploratória com dados públicos do Inep para entender a evasão no ensino médio brasileiro entre 2019 e 2025.
+`Python` `Pandas` `Jupyter`
 
 </td>
 </tr>
@@ -92,23 +92,14 @@ Guia visual e interativo de SQL para iniciantes, usando a analogia de um aeropor
 
 ---
 
-### `> stats --live`
+### `> ls repositórios/ --group-by=área`
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=bruno-dsn&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00F5D4&icon_color=8fd3ff&text_color=c9d1d9" width="48%"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bruno-dsn&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00F5D4&text_color=c9d1d9" width="48%"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=bruno-dsn&theme=tokyo-night&bg_color=0d1117&color=00F5D4&line=8fd3ff&point=ffffff&hide_border=true" width="97%"/>
-</p>
-
-<!--
-🐍 snake game de contribuições (opcional, requer 1 GitHub Action — ver instruções abaixo)
-<p align="center">
-  <img src="https://raw.githubusercontent.com/bruno-dsn/bruno-dsn/output/github-contribution-grid-snake.svg" width="97%"/>
-</p>
--->
+| Área | Repositórios |
+|---|---|
+| 🤖 **Machine Learning** | [ml-metrics-calculator](https://github.com/bruno-dsn/ml-metrics-calculator) · [credit-score-prediction-ml](https://github.com/bruno-dsn/credit-score-prediction-ml) |
+| 📊 **Análise de Dados** | [analise-evasao-escolar](https://github.com/bruno-dsn/analise-evasao-escolar) · [analise-cancelamentos](https://github.com/bruno-dsn/analise-cancelamentos) · [ecommerce-analise-graficos](https://github.com/bruno-dsn/ecommerce-analise-graficos) · [reforma-tributaria-2026](https://github.com/bruno-dsn/reforma-tributaria-2026) |
+| 📈 **Dados em Tempo Real** | [painel-precos-acoes](https://github.com/bruno-dsn/painel-precos-acoes) |
+| ⚙️ **Automação & Fundamentos** | [Automacao-de-Tarefas](https://github.com/bruno-dsn/Automacao-de-Tarefas) · [sql-guia-visual](https://github.com/bruno-dsn/sql-guia-visual) · [calculadora-python](https://github.com/bruno-dsn/calculadora-python) |
 
 ---
 
