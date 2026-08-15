@@ -89,7 +89,7 @@ Compara até 5 ações da B3 e o Ibovespa com retorno, volatilidade e drawdown, 
 </tr>
 </table>
 
-<p align="center"><i>mais em <a href="https://github.com/bruno-dsn?tab=repositories">bruno-dsn?tab=repositories</a></i></p>
+<p align="center"><i>mais em <a href="https://github.com/bruno-dsn?tab=repositories">bruno-dsn?tab=repositories</a> · apps publicados em <a href="https://share.streamlit.io/user/bruno-dsn">share.streamlit.io/user/bruno-dsn</a></i></p>
 
 ---
 
@@ -137,6 +137,19 @@ Compara até 5 ações da B3 e o Ibovespa com retorno, volatilidade e drawdown, 
 | ⚙️ **Automação & Qualidade de Dados** | [Automacao-de-Tarefas](https://github.com/bruno-dsn/Automacao-de-Tarefas) |
 | 📘 **Fundamentos** | [sql-guia-visual](https://github.com/bruno-dsn/sql-guia-visual) |
 
+---
+
+### `> support --this-work`
+
+<p align="center">
+  <a href="https://buymeacoffee.com/brunonunes">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" />
+  </a>
+  &nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/7b2cb2b5-283e-4b8a-b4a0-7324f2f0c15b" height="130" />
+</p>
+
+<p align="center"><i>escaneie o QR code ou clique no botão ☕</i></p>
 ---
 
 <div align="center">
