@@ -14,7 +14,7 @@ O visual Green Hat representa meu momento de aprendizado: estudar, testar em lab
 
 **Um laboratório para entender logs e organizar os primeiros ajustes de segurança.**
 
-[**▶ Abrir o aplicativo**](https://netguard-lab.brdsnunes.chatgpt.site) · [**⌘ Ver o código e o README**](https://github.com/bruno-dsn/bruno-dsn/tree/netguard-lab) · [**↓ Baixar o ZIP**](https://github.com/bruno-dsn/bruno-dsn/archive/refs/heads/netguard-lab.zip)
+[**▶ Abrir o aplicativo**](https://netguard-lab.brdsnunes.chatgpt.site) · [**⌘ Ver o código e o README**](https://github.com/bruno-dsn/netguard-lab) · [**↓ Baixar o ZIP**](https://github.com/bruno-dsn/netguard-lab/archive/refs/heads/main.zip)
 
 | Quero aprender a… | Onde começar |
 | --- | --- |
@@ -26,15 +26,15 @@ O visual Green Hat representa meu momento de aprendizado: estudar, testar em lab
 
 O aplicativo pode ser aberto pelos colegas pelo link. Arquivos e notas da edição web ficam na memória do navegador; exporte para continuar depois.
 
-**Onde está no GitHub?** O código está na branch `netguard-lab` deste repositório de perfil. Ainda não é um repositório independente na aba Repositories. Use o link **Ver o código** acima ou troque `main` por `netguard-lab` no seletor de branches.
+**Repositório próprio:** [bruno-dsn/netguard-lab](https://github.com/bruno-dsn/netguard-lab). Código, imagens, exemplos e testes estão na branch `main`; o projeto aparece na aba **Repositories**.
 
 ## 🌐 Rede em Movimento — aprenda construindo
 
 **Um projeto separado do NetGuard para reaprender redes com desenhos e prática.** A primeira versão acompanha o caminho de uma requisição ao abrir um site em 12 etapas, explora as sete camadas OSI e propõe desafios de cabo, gateway e DNS.
 
-[**▶ Prévia do autor**](https://rede-em-movimento.brdsnunes.chatgpt.site) · [**⌘ Ver o código e o README**](https://github.com/bruno-dsn/bruno-dsn/tree/rede-em-movimento) · [**↓ Baixar o ZIP**](https://github.com/bruno-dsn/bruno-dsn/archive/refs/heads/rede-em-movimento.zip)
+[**▶ Prévia do autor**](https://rede-em-movimento.brdsnunes.chatgpt.site) · [**⌘ Ver o código e o README**](https://github.com/bruno-dsn/rede-em-movimento) · [**↓ Baixar o ZIP**](https://github.com/bruno-dsn/rede-em-movimento/archive/refs/heads/main.zip)
 
-A prévia está publicada com acesso privado do autor. O código é público e pode ser executado localmente pelos colegas. Ele está na branch `rede-em-movimento` deste repositório de perfil; a criação de um repositório independente continua pendente.
+A prévia está publicada com acesso privado do autor. O código está no repositório público [bruno-dsn/rede-em-movimento](https://github.com/bruno-dsn/rede-em-movimento), na branch `main`, e pode ser executado localmente pelos colegas.
 
 ## 🧩 Explore meus outros projetos
 
@@ -69,4 +69,4 @@ Também mantenho forks de [REA](https://github.com/bruno-dsn/rea) e [Vibe Coding
 
 Estou aberto a oportunidades de início de carreira em dados e tecnologia. Você pode falar comigo pelo [LinkedIn](https://www.linkedin.com/in/bruno-dsnunes/) ou por [e-mail](mailto:brdsnunes@gmail.com).
 
-[**Ponto de retomada do nosso trabalho**](https://github.com/bruno-dsn/bruno-dsn/blob/netguard-lab/docs/CONTINUIDADE.md) · [Apoiar meus estudos](https://buymeacoffee.com/brunonunes)
+[**Ponto de retomada do nosso trabalho**](https://github.com/bruno-dsn/netguard-lab/blob/main/docs/CONTINUIDADE.md) · [Apoiar meus estudos](https://buymeacoffee.com/brunonunes)
