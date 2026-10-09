@@ -94,6 +94,6 @@ O relatório exportado pode conter contas, horários, valores e notas. Revise an
 
 O código está em `web/`. Para servir, copie `index.html`, `styles.css`, `app.js`, `core.js`, `wifi.js`, `shield.svg` e `data/` para a raiz estática. Não publique `node_modules`, testes ou dependências de desenvolvimento. Não há etapa de build.
 
-A versão hospedada começa com acesso privado do autor. A fonte pública no GitHub permite executar localmente. Preservar acesso privado não impede o compartilhamento de código e exemplos sintéticos.
+A versão 2.1 está publicada com acesso público em [NetGuard Lab](https://netguard-lab.brdsnunes.chatgpt.site), conforme o pedido de compartilhamento com os colegas. Arquivos selecionados, respostas e notas continuam sendo processados na memória do navegador. A fonte pública no GitHub também permite executar localmente. O curso separado Rede em Movimento tem sua própria publicação e seu próprio controle de acesso.
 
 O catálogo e os exemplos de `web/data` devem corresponder aos arquivos Python. Os testes verificam essa correspondência. Alterações nas regras precisam manter os casos financeiro e benigno e acrescentar casos que distingam falsos positivos, lacunas e correlação legítima.

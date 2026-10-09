@@ -6,7 +6,9 @@
 
 Uma pequena empresa sabe que precisa se proteger, mas nem sempre sabe por onde começar. Este laboratório transforma um inventário e 18 perguntas em um plano explicado. Um caso fictício de fraude financeira ensina a organizar registros, testar hipóteses e propor contenção a partir de evidências.
 
-[Abrir a edição web — acesso privado do autor](https://netguard-lab.brdsnunes.chatgpt.site) · [Executar localmente](#executar-localmente) · [Investigar um caso](docs/INVESTIGACAO_DE_LOGS.md) · [Trilha de estudo](docs/TRILHA_DE_ESTUDO.md)
+[Abrir a edição web pública](https://netguard-lab.brdsnunes.chatgpt.site) · [Executar localmente](#executar-localmente) · [Investigar um caso](docs/INVESTIGACAO_DE_LOGS.md) · [Trilha de estudo](docs/TRILHA_DE_ESTUDO.md) · [Ponto de retomada](docs/CONTINUIDADE.md)
+
+**Localização no GitHub:** o projeto está na branch [`netguard-lab`](https://github.com/bruno-dsn/bruno-dsn/tree/netguard-lab) do repositório de perfil `bruno-dsn/bruno-dsn`. A criação de um repositório independente continua pendente. O aplicativo publicado tem acesso público para estudar e compartilhar com os colegas.
 
 ## Novidades da versão 2.1
 
