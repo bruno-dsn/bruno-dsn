@@ -1,0 +1,4 @@
+data/*.csv -text
+data/*.jsonl -text
+web/data/*.csv -text
+web/data/*.jsonl -text
