@@ -1,0 +1,10 @@
+﻿timestamp,usuario,ip,resultado
+2026-10-08T12:00:00Z,financeiro.demo,203.0.113.90,falha
+2026-10-08T12:01:00Z,financeiro.demo,203.0.113.90,falha
+2026-10-08T12:02:00Z,financeiro.demo,203.0.113.90,falha
+2026-10-08T12:03:00Z,financeiro.demo,203.0.113.90,falha
+2026-10-08T12:04:00Z,financeiro.demo,203.0.113.90,falha
+2026-10-08T12:06:00Z,financeiro.demo,203.0.113.90,sucesso
+2026-10-08T13:00:00Z,atendimento.demo,192.0.2.14,sucesso
+2026-10-08T13:01:00Z,atendimento.demo,192.0.2.14,sucesso
+2026-10-08T13:02:00Z,atendimento.demo,192.0.2.14,sucesso

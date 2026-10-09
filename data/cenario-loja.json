@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "cenario": "Loja Horizonte · fictícia",
+  "answers": {
+    "gv01": "implemented",
+    "gv02": "partial",
+    "gv03": "partial",
+    "id01": "partial",
+    "id02": "partial",
+    "id03": "partial",
+    "pr01": "absent",
+    "pr02": "partial",
+    "pr03": "absent",
+    "pr04": "absent",
+    "pr05": "implemented",
+    "de01": "partial",
+    "de02": "unknown",
+    "rs01": "unknown",
+    "rs02": "partial",
+    "rc01": "partial",
+    "rc02": "absent",
+    "rc03": "partial"
+  },
+  "notes": {
+    "gv01": "Demonstração fictícia: função de coordenação registrada.",
+    "pr05": "Demonstração fictícia: orientação inicial sobre mensagens suspeitas."
+  },
+  "assets": [
+    {
+      "id": "srv-01",
+      "nome": "Servidor financeiro fictício",
+      "tipo": "servidor",
+      "zona": "servidores",
+      "ip": "192.168.10.10",
+      "exposto_internet": "sim",
+      "mfa": "nao",
+      "atualizado": "nao",
+      "backup_testado": "nao",
+      "portas": "443,3389"
+    },
+    {
+      "id": "pc-01",
+      "nome": "Atendimento fictício",
+      "tipo": "computador",
+      "zona": "interna",
+      "ip": "192.168.20.10",
+      "exposto_internet": "nao",
+      "mfa": "sim",
+      "atualizado": "sim",
+      "backup_testado": "desconhecido",
+      "portas": ""
+    },
+    {
+      "id": "router-01",
+      "nome": "Gateway fictício",
+      "tipo": "roteador",
+      "zona": "administracao",
+      "ip": "192.168.1.1",
+      "exposto_internet": "desconhecido",
+      "mfa": "desconhecido",
+      "atualizado": "sim",
+      "backup_testado": "desconhecido",
+      "portas": "443"
+    },
+    {
+      "id": "mail-01",
+      "nome": "E-mail em nuvem fictício",
+      "tipo": "email",
+      "zona": "nuvem",
+      "ip": "",
+      "exposto_internet": "sim",
+      "mfa": "nao",
+      "atualizado": "sim",
+      "backup_testado": "desconhecido",
+      "portas": "443"
+    }
+  ]
+}

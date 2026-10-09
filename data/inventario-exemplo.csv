@@ -1,0 +1,5 @@
+﻿id,nome,tipo,zona,ip,exposto_internet,mfa,atualizado,backup_testado,portas
+srv-01,Servidor financeiro fictício,servidor,servidores,192.168.10.10,sim,nao,nao,nao,"443,3389"
+pc-01,Atendimento fictício,computador,interna,192.168.20.10,nao,sim,sim,desconhecido,
+router-01,Gateway fictício,roteador,administracao,192.168.1.1,desconhecido,desconhecido,sim,desconhecido,443
+mail-01,E-mail em nuvem fictício,email,nuvem,,sim,nao,sim,desconhecido,443

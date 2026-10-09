@@ -1,161 +1,136 @@
-<div align="center">
+# NetGuard Lab
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=BRUNO%20NUNES&fontSize=55&fontColor=00F5D4&animation=fadeIn&fontAlignY=38&desc=Data%20%2B%20AI%20%7C%20Building%20things%20that%20turn%20noise%20into%20signal&descAlignY=58&descSize=18&descColor=8fd3ff" width="100%"/>
+**Primeiros ajustes de segurança, revisão de redes e investigação de logs para quem está começando.**
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=22&duration=3000&pause=800&color=00F5D4&center=true&vCenter=true&width=600&lines=analisando+dados...;treinando+modelos...;debugando+pipelines+%C3%A0s+2h+da+manh%C3%A3...;dados+bem+explorados+contam+hist%C3%B3rias." alt="Typing SVG" />
-</a>
+![Visão geral do NetGuard Lab](assets/interface-desktop.png)
 
-</div>
+Uma pequena empresa sabe que precisa se proteger, mas nem sempre sabe por onde começar. Este laboratório transforma um inventário e 18 perguntas em um plano explicado. Um caso fictício de fraude financeira ensina a organizar registros, testar hipóteses e propor contenção a partir de evidências.
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/bruno-dsnunes/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=00F5D4&labelColor=0d1117" /></a>
-  <a href="mailto:brdsnunes@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=00F5D4&labelColor=0d1117" /></a>
-  <a href="https://share.streamlit.io/user/bruno-dsn"><img src="https://img.shields.io/badge/Streamlit-Apps-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=00F5D4&labelColor=0d1117" /></a>
-  <img src="https://img.shields.io/badge/São_Paulo,_BR-8fd3ff?style=for-the-badge&logo=googlemaps&logoColor=0d1117&labelColor=0d1117" />
-</p>
+[Começar](#executar-localmente) · [Investigar um caso](docs/INVESTIGACAO_DE_LOGS.md) · [Entender o método](docs/METODOLOGIA.md) · [Trilha de quatro semanas](docs/TRILHA_DE_ESTUDO.md)
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=bruno-dsn&style=for-the-badge&color=00F5D4&labelColor=0d1117" alt="profile views"/>
-</p>
+## O que dá para fazer
 
----
+| Área | Experiência |
+| --- | --- |
+| Diagnóstico | Responder 18 controles, registrar evidências e distinguir lacunas de informações desconhecidas |
+| Inventário | Editar ativos ou importar CSV; revisar exposição, MFA, atualização e restauração declaradas |
+| Redes | Calcular IPv4 e IPv6, verificar sobreposição e simular uma política de acesso com negação padrão |
+| Investigação | Organizar eventos em UTC, filtrar fontes e ler sinais com IDs, hipóteses e explicações alternativas |
+| Caderno | Registrar observações, dúvidas e contenção proposta; exportar JSON com a identificação do arquivo |
+| Plano | Exportar a avaliação em JSON, o plano em CSV e um relatório HTML que pode ser impresso |
 
-### `> whoami`
+O aplicativo funciona localmente com cenários sintéticos. As regras são explícitas e não usam IA. Os relatórios organizam declarações; a aplicação não conecta equipamentos nem executa alterações em uma empresa.
 
-```yaml
-nome:        Bruno Nunes
-base:        São Paulo, BR 🇧🇷
-formação:    Pós-Tech AI Scientist (FIAP) — ML, Deep Learning, NLP, GenAI, MLOps
-trajetória:  12+ anos em TI/Suporte → hoje construindo modelos e pipelines de dados
-missão:      transformar dado bruto em decisão — sem enrolação, sem gráfico bonito e vazio
-status:      🟢 aberto a oportunidades e a boas conversas sobre dados
+## Seu primeiro caso de logs
+
+Em **Investigar logs**, abra **Fraude financeira fictícia**. A loja de exemplo relata duas operações não reconhecidas. Há 13 eventos de autenticação, identidade, rede e financeiro; duas transferências somam R$ 60 mil nos registros.
+
+1. Abra **Linha do tempo** e localize E007, E008, E010, E011 e E012.
+2. Em **Sinais e hipóteses**, compare a observação com a explicação alternativa.
+3. No **Caderno da investigação**, anote o que precisa confirmar com identidade e financeiro.
+4. Proponha uma ação com responsável e validação. Exporte o caderno e a linha do tempo.
+5. Troque para o **Caso benigno fictício**: um login legítimo após falhas ainda pode gerar um sinal.
+
+O exemplo declara que os sistemas compartilham IDs de sessão. Em um CSV próprio, a correlação entre fontes só é ativada após você confirmar essa compatibilidade. O IP ou a proximidade temporal, sozinhos, não estabelecem vínculo.
+
+![Investigação do caso fictício](assets/investigacao-desktop.png)
+
+O registro de uma conexão em RDP justifica uma verificação, mas não determina a porta de entrada da fraude. Os valores no arquivo também não comprovam liquidação bancária ou prejuízo. O [guia de investigação](docs/INVESTIGACAO_DE_LOGS.md) explica essas perguntas.
+
+## Executar localmente
+
+O código inicial está na branch `netguard-lab` do repositório de perfil. [Baixe o ZIP](https://github.com/bruno-dsn/bruno-dsn/archive/refs/heads/netguard-lab.zip) ou clone somente essa branch:
+
+```bash
+git clone --branch netguard-lab --single-branch https://github.com/bruno-dsn/bruno-dsn.git netguard-lab
+cd netguard-lab
 ```
 
----
+Requer **Python 3.12 ou superior**. Abra a pasta do projeto no terminal:
 
-### `> tech_stack --all`
+```bash
+python -m venv .venv
+```
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,scikitlearn,pandas,sqlite,git,github,vscode&theme=dark" />
-</p>
+Ative o ambiente:
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" />
-  <img src="https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white" />
-  <img src="https://img.shields.io/badge/Altair-1F77B4?style=flat-square" />
-  <img src="https://img.shields.io/badge/yfinance-8B5CF6?style=flat-square" />
-  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" />
-  <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" />
-  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" />
-</p>
+```bash
+# Linux/macOS
+source .venv/bin/activate
 
----
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+```
 
-### `> featured_projects.sort(by="impacto")`
+Instale e execute:
 
-<table>
-<tr>
-<td width="50%" valign="top">
+```bash
+python -m pip install -r requirements.txt
+python -m streamlit run app.py --server.address 127.0.0.1
+```
 
-**💳 [Laboratório de Risco de Crédito](https://github.com/bruno-dsn/credit-score-prediction-ml)**
-Simulador que estima probabilidade de inadimplência a partir de renda, valor solicitado, score e histórico do cliente, com explicação dos fatores por trás de cada decisão. ROC AUC 0,882 · acurácia 89,3%.
-`Python` `Streamlit` `Scikit-Learn` `Pytest`
+Abra o endereço local informado pelo Streamlit. Comece pela loja fictícia; depois escolha **Avaliação em branco** para preencher seu próprio exercício. Respostas e anotações ficam na sessão: exporte os arquivos antes de fechar o trabalho. O JSON da avaliação restaura diagnóstico e inventário; o caderno de logs tem exportação própria.
 
-</td>
-<td width="50%" valign="top">
+### Relatório pela linha de comando
 
-**📉 [Laboratório de Retenção de Clientes](https://github.com/bruno-dsn/analise-cancelamentos)**
-Estima o risco de cancelamento nos próximos 60 dias e simula o retorno (ROI) de campanhas de retenção por segmento. ROC AUC 0,788 em base de 12 mil clientes.
-`Python` `Streamlit` `Scikit-Learn` `Pytest`
+```bash
+python avaliar.py --avaliacao data/cenario-loja.json --saida reports/loja
+```
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+Isso gera `reports/loja.html` e `reports/loja.csv` sem abrir o aplicativo.
 
-**🧮 [Calculadora de Métricas de ML](https://github.com/bruno-dsn/ml-metrics-calculator)** · [🚀 app publicado](https://ml-metrics-calculator.streamlit.app/)
-Calcula e explica métricas de classificação e regressão (matriz de confusão, ROC, Precision-Recall), com limiar ajustável e alerta de desbalanceamento.
-`Python` `Streamlit` `Scikit-Learn` `Altair`
+## Formatos de entrada
 
-</td>
-<td width="50%" valign="top">
+| Arquivo | Exemplo | Limite |
+| --- | --- | --- |
+| Avaliação JSON | [Loja](data/cenario-loja.json) | 2 MB; versão de esquema 1; chaves e estados validados |
+| Inventário CSV | [Inventário](data/inventario-exemplo.csv) | 2 MB; até 500 ativos; IDs únicos |
+| Eventos CSV | [Caso financeiro](data/caso-financeiro-ficticio.csv) | 2 MB; até 10 mil eventos; IDs únicos e horários com fuso |
+| Autenticação CSV | [Log de autenticação](data/log-autenticacao-exemplo.csv) | 2 MB; até 10 mil eventos; usuário, IP e resultado |
 
-**📈 [Painel de Desempenho e Risco da B3](https://github.com/bruno-dsn/painel-precos-acoes)** · [🚀 app publicado](https://painel-precos-acoes.streamlit.app/)
-Compara até 5 ações da B3 e o Ibovespa com retorno, volatilidade e drawdown, normalizando tudo em base 100 para evitar comparações enganosas.
-`Python` `Streamlit` `yfinance` `Altair`
+Use UTF-8 e as colunas exatas dos exemplos. Valores financeiros usam ponto decimal, como `15000.00`, e precisão de centavos. IPv4 e IPv6 são aceitos. O parser normaliza horários em UTC e calcula o SHA-256 dos bytes recebidos; isso identifica a cópia recebida, sem comprovar sua autenticidade histórica.
 
-</td>
-</tr>
-</table>
+## Como interpretar o resultado
 
-<p align="center"><i>mais em <a href="https://github.com/bruno-dsn?tab=repositories">bruno-dsn?tab=repositories</a> · apps publicados em <a href="https://share.streamlit.io/user/bruno-dsn">share.streamlit.io/user/bruno-dsn</a></i></p>
+**Atendimento declarado** é uma média ponderada das respostas, com pesos próprios. Não se aplica exige justificativa e sai do cálculo; se tudo for excluído, não há percentual. Não sei aparece separado e gera uma tarefa para confirmar informação. Uma resposta implementada sem nota gera uma tarefa de evidência.
 
----
+O catálogo organiza o estudo pelas seis funções do NIST CSF 2.0. Ele não reproduz uma auditoria oficial, não mede probabilidade de ataque e não garante proteção. Os sinais de logs ajudam a formular perguntas e podem produzir falsos positivos. Leia a [metodologia](docs/METODOLOGIA.md).
 
-### `> monitor --repos --status`
+## Verificar uma mudança
 
-<table>
-<tr><th>Repositório</th><th>Status do app</th><th>Último commit</th><th>Linguagem</th></tr>
-<tr>
-<td><a href="https://github.com/bruno-dsn/credit-score-prediction-ml">credit-score-prediction-ml</a></td>
-<td><img src="https://img.shields.io/badge/local-Streamlit-8fd3ff?style=flat-square"/></td>
-<td><img src="https://img.shields.io/github/last-commit/bruno-dsn/credit-score-prediction-ml?style=flat-square&color=00F5D4&label=%20"/></td>
-<td><img src="https://img.shields.io/github/languages/top/bruno-dsn/credit-score-prediction-ml?style=flat-square&color=8fd3ff&label=%20"/></td>
-</tr>
-<tr>
-<td><a href="https://github.com/bruno-dsn/analise-cancelamentos">analise-cancelamentos</a></td>
-<td><img src="https://img.shields.io/badge/local-Streamlit-8fd3ff?style=flat-square"/></td>
-<td><img src="https://img.shields.io/github/last-commit/bruno-dsn/analise-cancelamentos?style=flat-square&color=00F5D4&label=%20"/></td>
-<td><img src="https://img.shields.io/github/languages/top/bruno-dsn/analise-cancelamentos?style=flat-square&color=8fd3ff&label=%20"/></td>
-</tr>
-<tr>
-<td><a href="https://github.com/bruno-dsn/ml-metrics-calculator">ml-metrics-calculator</a></td>
-<td><a href="https://ml-metrics-calculator.streamlit.app/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fml-metrics-calculator.streamlit.app%2F&style=flat-square&up_message=online&up_color=00F5D4&label=app"/></a></td>
-<td><img src="https://img.shields.io/github/last-commit/bruno-dsn/ml-metrics-calculator?style=flat-square&color=00F5D4&label=%20"/></td>
-<td><img src="https://img.shields.io/github/languages/top/bruno-dsn/ml-metrics-calculator?style=flat-square&color=8fd3ff&label=%20"/></td>
-</tr>
-<tr>
-<td><a href="https://github.com/bruno-dsn/painel-precos-acoes">painel-precos-acoes</a></td>
-<td><a href="https://painel-precos-acoes.streamlit.app/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fpainel-precos-acoes.streamlit.app%2F&style=flat-square&up_message=online&up_color=00F5D4&label=app"/></a></td>
-<td><img src="https://img.shields.io/github/last-commit/bruno-dsn/painel-precos-acoes?style=flat-square&color=00F5D4&label=%20"/></td>
-<td><img src="https://img.shields.io/github/languages/top/bruno-dsn/painel-precos-acoes?style=flat-square&color=8fd3ff&label=%20"/></td>
-</tr>
-</table>
+```bash
+python -m pip install -r requirements-dev.txt
+python -m ruff check .
+python -m pytest
+```
 
-<p align="center"><i>🟢 badges atualizados em tempo real pelo shields.io — o "app online" checa a URL de verdade a cada visita</i></p>
+Os testes verificam cálculos e limites de sub-redes, negação padrão, entradas inválidas, escape de relatórios, precisão financeira, janelas temporais, sessões distintas, falsos positivos e navegação do aplicativo. O workflow executa essas verificações em Python 3.12 e 3.13.
 
----
+## Organização
 
-### `> ls repositórios/ --group-by=área`
+```text
+app.py                    aplicação Streamlit
+avaliar.py                relatório pela linha de comando
+src/netguard/             regras independentes da interface
+data/                     cenários e registros fictícios
+docs/                     método, investigação e trilha de estudo
+tests/                    testes de regras e fluxos
+```
 
-| Área | Repositórios |
-|---|---|
-| 🤖 **Machine Learning** | [credit-score-prediction-ml](https://github.com/bruno-dsn/credit-score-prediction-ml) · [analise-cancelamentos](https://github.com/bruno-dsn/analise-cancelamentos) · [ml-metrics-calculator](https://github.com/bruno-dsn/ml-metrics-calculator) |
-| 📊 **Análise de Dados** | [analise-evasao-escolar](https://github.com/bruno-dsn/analise-evasao-escolar) · [ecommerce-analise-graficos](https://github.com/bruno-dsn/ecommerce-analise-graficos) · [reforma-tributaria-2026](https://github.com/bruno-dsn/reforma-tributaria-2026) |
-| 📈 **Mercado Financeiro** | [painel-precos-acoes](https://github.com/bruno-dsn/painel-precos-acoes) |
-| ⚙️ **Automação & Qualidade de Dados** | [Automacao-de-Tarefas](https://github.com/bruno-dsn/Automacao-de-Tarefas) |
-| 📘 **Fundamentos** | [sql-guia-visual](https://github.com/bruno-dsn/sql-guia-visual) |
+## Próximas experiências
 
----
+- Adaptadores para formatos específicos de logs, mantendo validação e origem dos campos.
+- Exercício de coleta e retenção de logs em uma máquina de laboratório.
+- Comparação entre uma regra explicável e detecção de anomalias, com avaliação temporal e medição de falsos positivos.
 
-### `> support --this-work`
+Esses itens são propostas futuras. A versão atual faz ingestão de arquivos e análise local; não é um coletor de produção ou um SIEM.
 
-<p align="center">
-  <a href="https://buymeacoffee.com/brunonunes">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" />
-  </a>
-  &nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/7b2cb2b5-283e-4b8a-b4a0-7324f2f0c15b" height="130" />
-</p>
+## Referências e autoria
 
-<p align="center"><i>escaneie o QR code ou clique no botão ☕</i></p>
----
+- [NIST SP 1300 — guia de início para pequenas empresas](https://www.nist.gov/publications/nist-cybersecurity-framework-20-small-business-quick-start-guide).
+- [NIST SP 800-61 Rev. 3 — resposta a incidentes](https://csrc.nist.gov/pubs/sp/800/61/r3/final).
+- [NIST SP 800-92 — fundamentos de gestão de logs](https://csrc.nist.gov/pubs/sp/800/92/final).
+- [CISA Secure Our World](https://www.cisa.gov/secure-our-world).
 
-<div align="center">
+Projeto educacional de **Bruno Nunes**. Controles, pesos, regras e casos são próprios. Sem afiliação ou certificação das instituições citadas. Licença [MIT](LICENSE).
 
-*"Sem dados, você é apenas mais uma pessoa com uma opinião."* — W. Edwards Deming
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=100&section=footer"/>
-
-</div>

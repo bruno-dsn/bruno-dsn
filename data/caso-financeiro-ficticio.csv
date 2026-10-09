@@ -1,0 +1,14 @@
+﻿event_id,timestamp,origem,usuario,ip,sessao,acao,resultado,recurso,valor_brl
+E001,2026-10-07T12:00:00Z,autenticacao,financeiro.demo,192.0.2.14,S-10,login,sucesso,erp-ficticio,
+E002,2026-10-08T12:00:00Z,autenticacao,financeiro.demo,203.0.113.90,,login,falha,erp-ficticio,
+E003,2026-10-08T12:01:00Z,autenticacao,financeiro.demo,203.0.113.90,,login,falha,erp-ficticio,
+E004,2026-10-08T12:02:00Z,autenticacao,financeiro.demo,203.0.113.90,,login,falha,erp-ficticio,
+E005,2026-10-08T12:03:00Z,autenticacao,financeiro.demo,203.0.113.90,,login,falha,erp-ficticio,
+E006,2026-10-08T12:04:00Z,autenticacao,financeiro.demo,203.0.113.90,,login,falha,erp-ficticio,
+E007,2026-10-08T12:06:00Z,autenticacao,financeiro.demo,203.0.113.90,S-77,login,sucesso,erp-ficticio,
+E008,2026-10-08T12:07:00Z,identidade,financeiro.demo,203.0.113.90,S-77,mfa_desativado,sucesso,conta-financeira,
+E009,2026-10-08T12:08:00Z,rede,financeiro.demo,203.0.113.90,,conexao_entrada,sucesso,servidor-ficticio:3389,
+E010,2026-10-08T12:14:00Z,financeiro,financeiro.demo,203.0.113.90,S-77,alteracao_favorecido,sucesso,favorecido-teste,
+E011,2026-10-08T12:20:00Z,financeiro,financeiro.demo,203.0.113.90,S-77,transferencia,sucesso,operacao-teste-01,28000.00
+E012,2026-10-08T12:23:00Z,financeiro,financeiro.demo,203.0.113.90,S-77,transferencia,sucesso,operacao-teste-02,32000.00
+E013,2026-10-08T12:45:00Z,identidade,financeiro.demo,203.0.113.90,S-77,sessao_revogada,sucesso,conta-financeira,
