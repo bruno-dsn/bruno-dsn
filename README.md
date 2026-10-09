@@ -28,9 +28,13 @@ O aplicativo pode ser aberto pelos colegas pelo link. Arquivos e notas da ediç�
 
 **Onde está no GitHub?** O código está na branch `netguard-lab` deste repositório de perfil. Ainda não é um repositório independente na aba Repositories. Use o link **Ver o código** acima ou troque `main` por `netguard-lab` no seletor de branches.
 
-## 🌐 O próximo laboratório
+## 🌐 Rede em Movimento — aprenda construindo
 
-**Rede em Movimento**: um projeto separado para reaprender redes com desenhos, animações por etapas, as sete camadas OSI e desafios práticos. A primeira missão acompanha o caminho de uma requisição ao abrir um site. Em preparação; a publicação será indicada aqui quando estiver confirmada.
+**Um projeto separado do NetGuard para reaprender redes com desenhos e prática.** A primeira versão acompanha o caminho de uma requisição ao abrir um site em 12 etapas, explora as sete camadas OSI e propõe desafios de cabo, gateway e DNS.
+
+[**▶ Prévia do autor**](https://rede-em-movimento.brdsnunes.chatgpt.site) · [**⌘ Ver o código e o README**](https://github.com/bruno-dsn/bruno-dsn/tree/rede-em-movimento) · [**↓ Baixar o ZIP**](https://github.com/bruno-dsn/bruno-dsn/archive/refs/heads/rede-em-movimento.zip)
+
+A prévia está publicada com acesso privado do autor. O código é público e pode ser executado localmente pelos colegas. Ele está na branch `rede-em-movimento` deste repositório de perfil; a criação de um repositório independente continua pendente.
 
 ## 🧩 Explore meus outros projetos
 
