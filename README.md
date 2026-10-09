@@ -1,8 +1,10 @@
+> Este é o snapshot histórico usado na migração. Continue pelo **[repositório próprio do Rede em Movimento](https://github.com/bruno-dsn/rede-em-movimento)**.
+
 # Rede em Movimento
 
-[**Abrir a prévia — acesso privado do autor**](https://rede-em-movimento.brdsnunes.chatgpt.site) · [**Código público**](https://github.com/bruno-dsn/bruno-dsn/tree/rede-em-movimento) · [**Baixar o ZIP**](https://github.com/bruno-dsn/bruno-dsn/archive/refs/heads/rede-em-movimento.zip) · [**Ponto de retomada**](https://github.com/bruno-dsn/bruno-dsn/blob/netguard-lab/docs/CONTINUIDADE.md)
+[**Abrir a prévia — acesso privado do autor**](https://rede-em-movimento.brdsnunes.chatgpt.site) · [**Código público**](https://github.com/bruno-dsn/rede-em-movimento) · [**Baixar o ZIP**](https://github.com/bruno-dsn/rede-em-movimento/archive/refs/heads/main.zip) · [**Ponto de retomada**](https://github.com/bruno-dsn/netguard-lab/blob/main/docs/CONTINUIDADE.md)
 
-O código está na branch `rede-em-movimento` do repositório de perfil `bruno-dsn/bruno-dsn`. A criação de um repositório independente continua pendente. A prévia está online para o autor; os colegas podem estudar o código e executar a edição local.
+O código está no repositório público `bruno-dsn/rede-em-movimento`, na branch `main`. A prévia está online para o autor; os colegas podem estudar o código e executar a edição local.
 
 **Uma reciclagem de redes para aprender construindo.** Projeto de Bruno Nunes, separado do NetGuard Lab.
 
