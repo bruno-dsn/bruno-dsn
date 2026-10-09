@@ -1,68 +1,73 @@
-# Bruno Nunes
+# Rede em Movimento
 
-![Bruno Nunes — redes, segurança e dados em um terminal verde](assets/profile-cover.svg)
+**Uma reciclagem de redes para aprender construindo.** Projeto de Bruno Nunes, separado do NetGuard Lab.
 
-> Curiosidade para aprender. Cuidado para investigar. Projetos para construir experiência.
+A primeira versão transforma o caminho de uma requisição ao abrir um site em uma aula animada de 12 etapas. Você pausa, volta, muda a velocidade e explora sete camadas OSI com desenhos próprios. Depois quebra uma pequena rede, ajusta as configurações e registra o que aprendeu.
 
-Sou formado em **Redes de Computadores desde 2017** e estudante de **Inteligência Artificial e Machine Learning**. Estou retomando redes e cibersegurança por meio de laboratórios práticos, enquanto construo projetos em dados, engenharia de dados e IA.
+## O que funciona nesta versão
 
-O visual Green Hat representa meu momento de aprendizado: estudar, testar em laboratório e explicar o que consegui descobrir.
+- Aula de DNS, enlace, IP, abertura TCP, TLS e HTTP, em um cenário fictício.
+- Navegação manual e reprodução por etapas; modo de movimento reduzido, teclado e descrições dos desenhos.
+- Explicações das sete camadas OSI, com funções, ilustrações e tarefas.
+- Missões de cabo desconectado, computadores em sub-redes distintas, gateway errado, DNS errado e serviço indisponível.
+- Comparação entre comunicação local, caminho remoto e acesso ao site pelo nome.
+- Caderno de três notas com exportação/restauração JSON e relatório HTML.
 
-[**LinkedIn**](https://www.linkedin.com/in/bruno-dsnunes/) · [**E-mail**](mailto:brdsnunes@gmail.com) · [**Todos os repositórios**](https://github.com/bruno-dsn?tab=repositories)
+As animações são ilustrações, não uma captura real nem um vídeo exportado. O modelo OSI organiza funções; a pilha TCP/IP não apresenta obrigatoriamente protocolos separados de sessão e apresentação. TLS não é classificado rigidamente como camada 6.
 
-## 🛡️ NetGuard Lab — comece por aqui
+## Estudar em dez minutos
 
-**Um laboratório para entender logs e organizar os primeiros ajustes de segurança.**
+1. Abra **Aula animada** e acompanhe o caminho. Pause antes do SYN e explique o que o DNS já resolveu.
+2. Em **Camadas OSI**, explore transporte, rede e enlace. Compare endereços IP e MAC.
+3. Em **Construir e corrigir**, escolha **Trocar gateway** e **Testar no modelo**. Compare o acesso local e o remoto.
+4. Corrija o gateway para `192.0.2.1` e teste novamente.
+5. Escolha **Trocar DNS**. Explique por que a falha é diferente.
+6. Exporte **Meu caderno** e repita a topologia no Packet Tracer para comparar com uma simulação mais completa.
 
-[**▶ Abrir o aplicativo**](https://netguard-lab.brdsnunes.chatgpt.site) · [**⌘ Ver o código e o README**](https://github.com/bruno-dsn/bruno-dsn/tree/netguard-lab) · [**↓ Baixar o ZIP**](https://github.com/bruno-dsn/bruno-dsn/archive/refs/heads/netguard-lab.zip)
+## Executar localmente
 
-| Quero aprender a… | Onde começar |
-| --- | --- |
-| Ler um registro sem experiência | **Ler um log** — campos e explicações em linguagem simples |
-| Investigar um relato | **Investigar** — linha do tempo, sinais, alternativas e caderno |
-| Revisar Wi-Fi e roteador | **Redes → Wi-Fi e roteador** — seis pontos com evidências |
-| Conhecer ferramentas | **Redes → Praticar com ferramentas** — Packet Tracer, Wireshark, Nmap e Wazuh |
-| Organizar os próximos ajustes | **Proteção inicial**, **Inventário** e **Meu plano** |
+Python disponível, sem instalar pacotes para a aplicação:
 
-O aplicativo pode ser aberto pelos colegas pelo link. Arquivos e notas da edição web ficam na memória do navegador; exporte para continuar depois.
-
-**Onde está no GitHub?** O código está na branch `netguard-lab` deste repositório de perfil. Ainda não é um repositório independente na aba Repositories. Use o link **Ver o código** acima ou troque `main` por `netguard-lab` no seletor de branches.
-
-## 🌐 O próximo laboratório
-
-**Rede em Movimento**: um projeto separado para reaprender redes com desenhos, animações por etapas, as sete camadas OSI e desafios práticos. A primeira missão acompanha o caminho de uma requisição ao abrir um site. Em preparação; a publicação será indicada aqui quando estiver confirmada.
-
-## 🧩 Explore meus outros projetos
-
-| Projeto | O que você pode explorar |
-| --- | --- |
-| [Lab Bricks](https://github.com/bruno-dsn/lab-bricks) | Escola prática de dados e Databricks, exercícios, SQL, BI, ML e IA com evidências |
-| [VolunTech](https://github.com/bruno-dsn/VolunTech-FAM) | Gestão acadêmica de voluntariado, operações e laboratório SQL |
-| [SQL sem Mistério](https://github.com/bruno-dsn/sql-guia-visual) | Consultas explicadas, tabelas visíveis e desafios para começar em SQL |
-| [Qualidade e automação](https://github.com/bruno-dsn/Automacao-de-Tarefas) | Validação de catálogo, fila de execução e logs em ambiente local |
-| [Retenção de clientes](https://github.com/bruno-dsn/analise-cancelamentos) | Segmentos, classificação e cenários de campanha com dados sintéticos |
-| [Risco de crédito](https://github.com/bruno-dsn/credit-score-prediction-ml) | Simulação em reais, parcelas e avaliação de um modelo educacional |
-| [Métricas de ML](https://github.com/bruno-dsn/ml-metrics-calculator) | Classificação, regressão e efeito dos limiares nas decisões |
-| [Demanda, preço e margem](https://github.com/bruno-dsn/ecommerce-analise-graficos) | Conversão, rentabilidade e cenários no varejo digital |
-| [Abandono escolar](https://github.com/bruno-dsn/analise-evasao-escolar) | Comparações territoriais com dados públicos do Inep |
-| [Reforma Tributária](https://github.com/bruno-dsn/reforma-tributaria-2026) | Fontes legais, transição e simulações educacionais |
-| [Painel B3](https://github.com/bruno-dsn/painel-precos-acoes) | Retorno, volatilidade, drawdown e correlação com fonte identificada |
-
-
-## 🟢 Meu jeito de aprender
-
-```text
-observar → formular uma hipótese → testar → registrar → explicar
+```bash
+python -m http.server 8000 --bind 127.0.0.1
 ```
 
-Cada README explica o problema, a origem dos dados, como executar e os limites do resultado. Identifico dados sintéticos e separo os resultados de laboratório de experiência profissional ou validação em produção.
+Abra `http://127.0.0.1:8000`. Use um navegador atual com módulos ES. Abrir por `file://` não é suportado.
 
-As tecnologias dos projetos incluem **Python, SQL, pandas, scikit-learn, Streamlit, TypeScript e React**. O Lab Bricks também contém práticas para uma conta Databricks, cuja validação nativa é registrada separadamente dos testes locais.
+Para testes de regras e fluxos DOM, use o Node indicado em `package.json`:
 
-## 📚 Referências de estudo
+```bash
+npm ci --ignore-scripts
+npm test
+```
 
-Também mantenho forks de [REA](https://github.com/bruno-dsn/rea) e [Vibe Coding Toolkit](https://github.com/bruno-dsn/vibe-coding-toolkit). São projetos de outros autores que uso para estudar; os créditos e as licenças estão nos respectivos repositórios.
+Para empacotar os arquivos estáticos: `npm run build`. Publique somente `dist/`, sem dependências de desenvolvimento.
 
-Estou aberto a oportunidades de início de carreira em dados e tecnologia. Você pode falar comigo pelo [LinkedIn](https://www.linkedin.com/in/bruno-dsnunes/) ou por [e-mail](mailto:brdsnunes@gmail.com).
+## Limites do exercício
 
-[**Ponto de retomada do nosso trabalho**](https://github.com/bruno-dsn/bruno-dsn/blob/netguard-lab/docs/CONTINUIDADE.md) · [Apoiar meus estudos](https://buymeacoffee.com/brunonunes)
+A máscara é sempre /24. O roteador tem `192.0.2.1/24`, o DNS `198.51.100.53` e o servidor web `203.0.113.80`. São endereços de documentação. Os cenários têm nome fictício e não fazem sondagens de rede.
+
+O modelo não implementa DHCP, ARP, NAT, IPv6, VLANs, firewall ou o estado completo de TCP/TLS. A animação assume endereços e rotas configurados, MAC do gateway conhecido, DNS sem resposta em cache e HTTPS sobre TCP. HTTP/3/QUIC terá outro caminho de estudo. A negociação TLS e a resposta HTTP podem resumir vários pacotes numa cena.
+
+O teste local considera uma LAN sem rota adicional entre os computadores. Alterar o computador B não impede, sozinho, o computador A de usar o site. Um diagnóstico do modelo não verifica equipamentos reais.
+
+## Caderno e segurança
+
+As notas e configurações ficam na memória da página, sem envio ao servidor, localStorage ou IndexedDB. Exporte antes de fechar ou recarregar. JSON tem esquema 1, tipo próprio, campos exatos, limite de 2 MB, chaves únicas e notas de até 2.000 unidades UTF-16. Uma importação inválida preserva o caderno anterior.
+
+A configuração pode estar errada no cenário, mas precisa ter IPv4s com sintaxe válida para exportar. Textos são escapados na interface e nos relatórios, que têm política CSP sem scripts. Não há captura de pacotes ou execução de comandos.
+
+## Próximos módulos
+
+- DHCP e ARP, com eventos visíveis e cache.
+- Sub-redes com prefixos variáveis, IPv6 e planejamento.
+- VLANs, roteamento e regras entre redes.
+- Arquivos de laboratório Packet Tracer e exercícios com capturas de exemplo no Wireshark.
+
+São propostas futuras, não funções já implementadas. A inspeção visual em navegador precisa ser registrada separadamente dos testes DOM.
+
+## Referências
+
+Os textos, desenhos e cenários são próprios. As referências técnicas são [ITU X.200](https://www.itu.int/rec/T-REC-X.200-199407-I/en), [RFC 1122](https://www.rfc-editor.org/info/rfc1122/), [RFC 9293](https://www.rfc-editor.org/info/rfc9293/), [RFC 1034](https://www.rfc-editor.org/info/rfc1034/) e [RFC 9846](https://www.rfc-editor.org/info/rfc9846/). Para praticar fora deste aplicativo: [Cisco Packet Tracer](https://www.netacad.com/learning-collections/cisco-packet-tracer).
+
+Licença MIT. Este projeto não é afiliado à Cisco, à ITU ou à IETF.
