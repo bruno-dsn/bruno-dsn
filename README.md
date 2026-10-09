@@ -1,5 +1,9 @@
 # Rede em Movimento
 
+[**Abrir a prévia — acesso privado do autor**](https://rede-em-movimento.brdsnunes.chatgpt.site) · [**Código público**](https://github.com/bruno-dsn/bruno-dsn/tree/rede-em-movimento) · [**Baixar o ZIP**](https://github.com/bruno-dsn/bruno-dsn/archive/refs/heads/rede-em-movimento.zip) · [**Ponto de retomada**](https://github.com/bruno-dsn/bruno-dsn/blob/netguard-lab/docs/CONTINUIDADE.md)
+
+O código está na branch `rede-em-movimento` do repositório de perfil `bruno-dsn/bruno-dsn`. A criação de um repositório independente continua pendente. A prévia está online para o autor; os colegas podem estudar o código e executar a edição local.
+
 **Uma reciclagem de redes para aprender construindo.** Projeto de Bruno Nunes, separado do NetGuard Lab.
 
 A primeira versão transforma o caminho de uma requisição ao abrir um site em uma aula animada de 12 etapas. Você pausa, volta, muda a velocidade e explora sete camadas OSI com desenhos próprios. Depois quebra uma pequena rede, ajusta as configurações e registra o que aprendeu.
