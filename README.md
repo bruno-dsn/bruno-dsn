@@ -6,6 +6,14 @@ Sou formado em **Redes de Computadores desde 2017** e estudante de **Inteligênc
 
 [LinkedIn](https://www.linkedin.com/in/bruno-dsnunes/) · [E-mail](mailto:brdsnunes@gmail.com) · [Todos os repositórios](https://github.com/bruno-dsn?tab=repositories)
 
+## NetGuard Lab — acesso direto
+
+O **NetGuard Lab** está na branch `netguard-lab` deste repositório. Por enquanto ele **não aparece como um repositório separado** na aba Repositories.
+
+[**Ver o código e o README do NetGuard**](https://github.com/bruno-dsn/bruno-dsn/tree/netguard-lab) · [**Abrir o aplicativo — acesso privado do autor**](https://netguard-lab.brdsnunes.chatgpt.site) · [Baixar o projeto em ZIP](https://github.com/bruno-dsn/bruno-dsn/archive/refs/heads/netguard-lab.zip)
+
+No GitHub, abra este repositório e troque `main` por `netguard-lab` no seletor de branches para explorar os arquivos. O aplicativo ajuda iniciantes a ler logs, investigar casos fictícios e organizar os primeiros ajustes de segurança.
+
 ## Explore meu trabalho
 
 | Projeto | O que você pode explorar |
