@@ -105,7 +105,7 @@ test("all seven workspaces render substantive content and labeled inputs", async
           `label for ${input.id}`,
         );
     }
-    assert.equal(f.requests.length, 5);
+    assert.equal(f.requests.length, 6);
     assert.equal(f.doc.querySelectorAll("script:not([src])").length, 0);
   } finally {
     f.close();
@@ -235,7 +235,7 @@ test("own-file import starts uncorrelated, escapes hostile text and sends no log
       f.doc.querySelector(".event-detail").textContent,
       /<img src=x/,
     );
-    assert.equal(f.requests.length, 5);
+    assert.equal(f.requests.length, 6);
     f.click("tab", "signals");
     assert.ok(!f.doc.querySelector(".contingency"));
   } finally {
@@ -359,4 +359,56 @@ test("keyboard focus survives interactive rerenders and motion preference", asyn
   } finally {
     f.close();
   }
+});
+
+test("Wi-Fi review requires evidence, preserves notes between practices and explains guest isolation", async () => {
+  const f = await fixture("redes");
+  try {
+    f.click("network-tab", "wifi");
+    assert.equal(f.doc.getElementById("network-tab-wifi").getAttribute("aria-pressed"), "true");
+    assert.equal(f.doc.querySelectorAll("[data-wifi-status]").length, 6);
+    for (const target of f.doc.querySelectorAll("main input, main select, main textarea"))
+      assert.ok(f.doc.querySelector(`label[for="${target.id}"]`));
+    f.change("wifi-status-encryption", "checked");
+    assert.equal(f.app.state.wifi.answers.encryption, "unknown");
+    assert.match(f.doc.getElementById("toast").textContent, /evidência/);
+    f.input("wifi-note-encryption", "WPA3 conferido no exercício fictício em 09/10.");
+    f.change("wifi-status-encryption", "checked");
+    assert.equal(f.app.state.wifi.answers.encryption, "checked");
+    f.input("wifi-note-encryption", "");
+    assert.match(f.doc.getElementById("wifi-note-encryption").value, /WPA3/);
+    f.click("network-tab", "ferramentas");
+    for (const tool of ["Packet Tracer", "Wireshark", "Nmap", "Wazuh"])
+      assert.ok(f.doc.getElementById("main").textContent.includes(tool));
+    f.click("network-tab", "wifi");
+    assert.match(f.doc.getElementById("wifi-note-encryption").value, /WPA3/);
+    f.click("guest-example");
+    assert.equal(f.app.state.network.destination, "servidores");
+    assert.equal(f.app.state.network.port, 443);
+    assert.match(f.doc.querySelector(".network-path").textContent, /Negado/);
+    assert.equal(f.app.state.wifi.answers.encryption, "checked");
+  } finally { f.close(); }
+});
+
+test("Wi-Fi imports preserve previous state on failure and render imported text safely", async () => {
+  const f = await fixture("redes");
+  try {
+    f.click("network-tab", "wifi");
+    const previous = f.app.state.wifi;
+    await f.upload("wifi-file", "invalid.json", JSON.stringify(f.app.state.snapshot));
+    assert.equal(f.app.state.wifi, previous);
+    const candidate = structuredClone(previous);
+    candidate.network_name = '<img src=x onerror="alert(1)">';
+    candidate.notes.guest = '<script>alert("teste")</script>';
+    candidate.answers.guest = "review";
+    await f.upload("wifi-file", "wifi.json", JSON.stringify(candidate));
+    assert.deepEqual(JSON.parse(JSON.stringify(f.app.state.wifi)), candidate);
+    assert.equal(f.doc.querySelectorAll("main img, main script").length, 0);
+    assert.equal(f.doc.getElementById("wifi-note-guest").value, candidate.notes.guest);
+    candidate.answers.guest = "checked";
+    candidate.notes.guest = "";
+    await f.upload("wifi-file", "invalid-evidence.json", JSON.stringify(candidate));
+    assert.equal(f.app.state.wifi.answers.guest, "review");
+    assert.match(f.app.state.wifi.notes.guest, /script/);
+  } finally { f.close(); }
 });

@@ -12,7 +12,7 @@ import { fileURLToPath } from "node:url";
 
 const source = fileURLToPath(new URL(".", import.meta.url));
 const target = path.resolve(source, "../dist");
-const files = ["index.html", "styles.css", "app.js", "core.js", "shield.svg"];
+const files = ["index.html", "styles.css", "app.js", "core.js", "wifi.js", "shield.svg"];
 for (const file of files)
   if (
     !existsSync(path.join(source, file)) ||

@@ -8,6 +8,14 @@ Uma pequena empresa sabe que precisa se proteger, mas nem sempre sabe por onde c
 
 [Abrir a edição web — acesso privado do autor](https://netguard-lab.brdsnunes.chatgpt.site) · [Executar localmente](#executar-localmente) · [Investigar um caso](docs/INVESTIGACAO_DE_LOGS.md) · [Trilha de estudo](docs/TRILHA_DE_ESTUDO.md)
 
+## Novidades da versão 2.1
+
+Em **Redes**, escolha **Wi-Fi e roteador** para revisar seis pontos: proteção da conexão, administração, atualizações, isolamento de visitantes, dispositivos e registros. Cada ponto explica como conferir e qual próximo passo considerar. “Conferido por mim” e “Não se aplica” exigem evidência ou justificativa; os resultados são contagens de declarações, sem nota de segurança.
+
+Salve a revisão em **JSON** para continuar depois ou gere um **relatório HTML** para leitura e impressão. A revisão tem arquivo próprio, separado da avaliação dos 18 controles e do caderno de logs, e funciona nas edições web e Python. Ela não conecta o roteador, identifica dispositivos ou testa Wi-Fi.
+
+Em **Praticar com ferramentas**, há quatro missões iniciais com referências oficiais: Packet Tracer, Wireshark, Nmap e Wazuh. Comece pelas duas primeiras e registre o que fez, o que observou e o que não conseguiu confirmar.
+
 ## Novidades da versão 2
 
 - **Interface web sem instalação**, em creme, verde e amarelo, com cartão interativo e opção de reduzir movimento.
@@ -26,7 +34,7 @@ A referência visual foi o [Hackathon / Superteam Brasil](https://hackathon.supe
 | Diagnóstico | Responder 18 controles, registrar evidências e distinguir lacunas de informações desconhecidas |
 | Leitura de logs | Explorar campos e um exercício guiado sem exigir experiência prévia |
 | Inventário | Cadastrar, editar ou importar ativos; revisar exposição, MFA, atualização e restauração declaradas |
-| Redes | Calcular IPv4 e IPv6, verificar sobreposição e simular uma política de acesso com negação padrão |
+| Redes | Calcular IPv4/IPv6, simular acessos, revisar Wi-Fi/roteador com evidências e explorar quatro missões de ferramentas |
 | Investigação | Organizar eventos em UTC, avançar passo a passo, buscar e abrir evidências pelos IDs |
 | Caderno | Registrar observações, hipóteses, dúvidas e contenção; exportar e restaurar JSON e gerar relatório HTML |
 | Plano | Exportar a avaliação em JSON, o plano em CSV e um relatório HTML que pode ser impresso |
@@ -111,6 +119,7 @@ Isso gera `reports/loja.html` e `reports/loja.csv` sem abrir o aplicativo.
 | Inventário CSV | [Inventário](data/inventario-exemplo.csv) | 2 MB; até 500 ativos; IDs únicos |
 | Eventos CSV | [Caso financeiro](data/caso-financeiro-ficticio.csv) | 2 MB; até 10 mil eventos; IDs únicos e horários com fuso |
 | Eventos JSONL | [Mesmo caso em JSONL](data/caso-financeiro-ficticio.jsonl) | Mesmos campos e limites; um objeto por linha; todos os valores como texto |
+| Revisão Wi-Fi JSON | Exportada pela área Redes | 2 MB; esquema 1 próprio; seis respostas e seis notas de até 1.000 caracteres |
 | Caderno JSON | Exportado pela interface | 2 MB; esquema 1; quatro notas de até 3.000 caracteres; hash e IDs do recorte |
 | Autenticação CSV | [Log de autenticação](data/log-autenticacao-exemplo.csv) | 2 MB; até 10 mil eventos; usuário, IP e resultado |
 

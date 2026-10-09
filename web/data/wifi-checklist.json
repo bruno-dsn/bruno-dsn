@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "statuses": {
+    "unknown": "Ainda não sei",
+    "review": "Precisa de ajuste",
+    "checked": "Conferido por mim",
+    "na": "Não se aplica"
+  },
+  "controls": [
+    {
+      "id": "encryption",
+      "title": "A conexão Wi-Fi usa proteção adequada?",
+      "why": "A proteção da conexão evita que a rede opere aberta ou com padrões antigos. A senha do Wi-Fi é diferente da senha de administração do roteador.",
+      "verify": "No painel autorizado, confira o modo: WPA3 quando os equipamentos forem compatíveis; WPA2 como alternativa de compatibilidade. Registre o modo e a data, sem copiar a senha.",
+      "next": "Combine uma atualização do modo e dos equipamentos incompatíveis; confira a reconexão dos dispositivos de trabalho."
+    },
+    {
+      "id": "administration",
+      "title": "Quem consegue administrar o roteador?",
+      "why": "O painel controla a rede. Uma senha padrão ou administração exposta pela internet aumenta a necessidade de revisão.",
+      "verify": "Confirme com o responsável uma senha administrativa única e a desativação da administração remota pela internet. Se houver acesso remoto necessário, documente o método autorizado e seus controles.",
+      "next": "Troque a credencial padrão e restrinja a administração com o responsável. Planeje o impacto antes de mudar o acesso."
+    },
+    {
+      "id": "updates",
+      "title": "O equipamento ainda recebe atualizações?",
+      "why": "A versão e o suporte do fabricante ajudam a entender quais correções ainda podem ser aplicadas.",
+      "verify": "Registre modelo, versão, data da consulta e situação de suporte na página oficial do fabricante. O aplicativo não consulta o roteador nem verifica a versão.",
+      "next": "Agende a correção com cópia da configuração, plano de retorno e teste de conectividade; avalie substituição se não houver suporte."
+    },
+    {
+      "id": "guest",
+      "title": "Visitantes ficam separados da empresa?",
+      "why": "Uma rede de visitantes deve permitir os acessos necessários sem alcançar sistemas internos. Um nome de Wi-Fi diferente não demonstra isolamento.",
+      "verify": "Revise VLANs e regras com o administrador. Em ambiente autorizado, documente um teste de acesso à internet e um teste de bloqueio de um serviço interno conhecido; falha de ping sozinha não comprova isolamento.",
+      "next": "Defina as redes e os serviços permitidos, ajuste as regras e repita os testes com os responsáveis."
+    },
+    {
+      "id": "devices",
+      "title": "Você sabe quais dispositivos têm acesso?",
+      "why": "Computadores gerenciados, dispositivos pessoais e equipamentos IoT podem precisar de permissões diferentes.",
+      "verify": "Compare os dispositivos autorizados com o inventário e registre responsáveis, rede e necessidade de acesso. Consulte registros de DHCP e do ponto de acesso; uma lista é um recorte, não um histórico completo.",
+      "next": "Atualize o inventário e revise o acesso de equipamentos desconhecidos com o responsável; avalie uma rede própria para IoT e dispositivos pessoais."
+    },
+    {
+      "id": "logs",
+      "title": "Os registros ajudam a entender o que ocorreu?",
+      "why": "Horário, origem, acesso administrativo e eventos de autenticação ajudam a reconstruir uma sequência. Disponibilidade e formato variam por equipamento.",
+      "verify": "Confira quais eventos são registrados, fuso e sincronização de horário, período de retenção e quem pode lê-los. Registre uma referência sem senhas, tokens ou dados de terceiros.",
+      "next": "Defina coleta, acesso e retenção com o administrador. Preserve o original e o fuso ao preparar uma cópia para investigação."
+    }
+  ],
+  "references": [
+    {
+      "name": "FTC — segurança de pequenas empresas",
+      "url": "https://www.ftc.gov/business-guidance/small-businesses/cybersecurity"
+    },
+    {
+      "name": "OWASP — gestão de logs",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html"
+    }
+  ]
+}

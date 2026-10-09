@@ -46,3 +46,24 @@ def test_log_workspace_switches_to_benign_and_notebook_retains_notes():
     assert "E008" in at.text_area[0].value
     assert not at.exception
 
+
+
+def test_wifi_workspace_requires_evidence_and_preserves_notes_between_practices():
+    at = app()
+    at.radio(key="page").set_value("Laboratório de redes").run()
+    at.radio(key="network_mode").set_value("Wi-Fi e roteador").run()
+    assert not at.exception
+    assert [metric.value for metric in at.metric] == ["6", "0", "0", "0"]
+    at.selectbox(key="wifi_status_encryption").set_value("checked").run()
+    assert at.session_state["wifi_review"]["answers"]["encryption"] == "unknown"
+    assert at.warning
+    at.text_area(key="wifi_note_encryption").set_value("WPA3 conferido no exercício fictício em 09/10.").run()
+    at.selectbox(key="wifi_status_encryption").set_value("checked").run()
+    assert at.session_state["wifi_review"]["answers"]["encryption"] == "checked"
+    assert [metric.value for metric in at.metric] == ["5", "0", "1", "0"]
+    at.radio(key="network_mode").set_value("Praticar com ferramentas").run()
+    assert not at.exception
+    at.radio(key="network_mode").set_value("Wi-Fi e roteador").run()
+    assert not at.exception
+    assert at.selectbox(key="wifi_status_encryption").value == "checked"
+    assert "WPA3" in at.text_area(key="wifi_note_encryption").value

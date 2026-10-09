@@ -70,6 +70,18 @@ O inventário usa dez colunas do modelo. Há até 500 ativos, com IDs únicos. E
 
 O JSON da avaliação e o JSON do caderno são contratos diferentes. A interface valida cada um antes de substituir dados. Importações inválidas preservam o estado válido anterior.
 
+## Revisão de Wi-Fi e roteador
+
+Em **Redes**, alterne entre **Conexões e IPs**, **Wi-Fi e roteador** e **Praticar com ferramentas**. O desenho e a política de conexões são simulações. A revisão Wi-Fi registra declarações e evidências; não descobre equipamentos, conecta roteadores nem testa isolamento.
+
+Seis controles próprios cobrem proteção da conexão, administração, atualização, visitantes, dispositivos e registros. Estados: `unknown`, `review`, `checked` e `na`. Os dois últimos exigem uma nota não vazia. As contagens não viram percentual ou pontuação de segurança. Um nome de Wi-Fi diferente e uma falha de ping não comprovam isolamento.
+
+O JSON usa `schema_version: 1`, `kind: "netguard-wifi-review"`, `network_name`, `answers` e `notes`, com exatamente os seis IDs do catálogo. Nome: até 100 unidades UTF-16; nota: até 1.000. Limite total de 2 MB, UTF-8, chaves únicas e sem campos extras. Um arquivo de avaliação ou caderno não pode substituir essa revisão. Falhas na importação preservam a revisão anterior.
+
+A revisão JSON pode ser restaurada nas edições web e Python. O HTML escapado permite leitura e impressão, com CSP sem scripts. Guarde esses arquivos separadamente da avaliação e do caderno. O catálogo `wifi-checklist.json` é compartilhado pelas duas edições.
+
+As missões de ferramentas são propostas próprias com links oficiais. As ferramentas rodam fora do NetGuard e seus resultados não são importados automaticamente. Capturas PCAP do Wireshark não seguem o contrato de eventos CSV/JSONL.
+
 ## Segurança e verificação
 
 Texto importado é escapado na interface e nos relatórios. Não é executado como HTML. Não há `eval`, comandos, sondagem ou aplicação automática de contenção. O HTML principal inclui uma política CSP que permite scripts e estilos locais; relatórios exportados têm política restrita sem scripts. A meta CSP não define políticas de framing ou cabeçalhos HTTP da hospedagem.
@@ -80,7 +92,7 @@ O relatório exportado pode conter contas, horários, valores e notas. Revise an
 
 ## Hospedagem e manutenção
 
-O código está em `web/`. Para servir, copie `index.html`, `styles.css`, `app.js`, `core.js`, `shield.svg` e `data/` para a raiz estática. Não publique `node_modules`, testes ou dependências de desenvolvimento. Não há etapa de build.
+O código está em `web/`. Para servir, copie `index.html`, `styles.css`, `app.js`, `core.js`, `wifi.js`, `shield.svg` e `data/` para a raiz estática. Não publique `node_modules`, testes ou dependências de desenvolvimento. Não há etapa de build.
 
 A versão hospedada começa com acesso privado do autor. A fonte pública no GitHub permite executar localmente. Preservar acesso privado não impede o compartilhamento de código e exemplos sintéticos.
 

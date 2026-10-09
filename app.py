@@ -19,6 +19,7 @@ from netguard.learning import FIELD_GUIDE, explain_event  # noqa: E402
 from netguard.notebook import decode_notebook, encode_notebook, investigation_report  # noqa: E402
 from netguard.network import ZONES as POLICY_ZONES, overlap_pairs, policy_decision, subnet_info  # noqa: E402
 from netguard.reports import action_plan, decode_snapshot, encode_snapshot, html_report, safe_csv  # noqa: E402
+from netguard.wifi import CATALOG as WIFI_CATALOG, CONTROLS as WIFI_CONTROLS, STATUSES as WIFI_STATUSES, decode_review, encode_review, new_review, review_report, review_summary, validate_review  # noqa: E402
 
 
 st.set_page_config(page_title="NetGuard Lab · Primeiros ajustes", page_icon="🛡️", layout="wide")
@@ -98,6 +99,107 @@ def import_investigation_notebook(prefix, investigation, case):
         st.session_state.pop("notebook_restore_error", None)
     except ValueError as error:
         st.session_state.notebook_restore_error = str(error)
+
+
+
+def save_wifi_note(control_id):
+    review = st.session_state.wifi_review
+    note = st.session_state[f"wifi_note_{control_id}"]
+    if review["answers"][control_id] in ("checked", "na") and not note.strip():
+        st.session_state[f"wifi_note_{control_id}"] = review["notes"][control_id]
+        st.session_state.wifi_error = "Altere primeiro a resposta para manter a evidência ou justificativa obrigatória."
+    else:
+        review["notes"][control_id] = note
+        st.session_state.pop("wifi_error", None)
+
+
+def save_wifi_answer(control_id):
+    review = st.session_state.wifi_review
+    candidate = {**review, "answers": {**review["answers"], control_id: st.session_state[f"wifi_status_{control_id}"]}}
+    try:
+        validate_review(candidate)
+        st.session_state.wifi_review = candidate
+        st.session_state.pop("wifi_error", None)
+    except ValueError as error:
+        st.session_state[f"wifi_status_{control_id}"] = review["answers"][control_id]
+        st.session_state.wifi_error = str(error)
+
+
+def save_wifi_name():
+    st.session_state.wifi_review["network_name"] = st.session_state.wifi_name.strip() or "Minha rede"
+
+
+def import_wifi_review():
+    file = st.session_state.wifi_restore_file
+    if file is None:
+        return
+    try:
+        review = decode_review(file.getvalue())
+        st.session_state.wifi_review = review
+        st.session_state.wifi_name = review["network_name"]
+        for control in WIFI_CONTROLS:
+            key = control["id"]
+            st.session_state[f"wifi_note_{key}"] = review["notes"][key]
+            st.session_state[f"wifi_status_{key}"] = review["answers"][key]
+        st.session_state.pop("wifi_error", None)
+    except ValueError as error:
+        st.session_state.wifi_error = str(error)
+
+
+def wifi_workspace():
+    review = st.session_state.setdefault("wifi_review", new_review())
+    st.subheader("Comece a conferir seu Wi-Fi.")
+    st.info("As respostas são suas declarações. O aplicativo não conecta o roteador, descobre dispositivos ou mede a segurança da rede. Use uma rede sua ou autorizada.")
+    st.session_state.setdefault("wifi_name", review["network_name"])
+    st.text_input("Nome para esta revisão", key="wifi_name", max_chars=100, on_change=save_wifi_name)
+    st.caption("Registre versão, data e referência. Evite anotar senhas, tokens ou dados pessoais. Escreva a evidência antes de marcar Conferido por mim ou Não se aplica.")
+    if "wifi_error" in st.session_state:
+        st.warning(st.session_state.wifi_error)
+    for control in WIFI_CONTROLS:
+        key = control["id"]
+        st.session_state.setdefault(f"wifi_note_{key}", review["notes"][key])
+        st.session_state.setdefault(f"wifi_status_{key}", review["answers"][key])
+        with st.container(border=True):
+            st.subheader(control["title"])
+            st.write(control["why"])
+            with st.expander("Como conferir?"):
+                st.write(control["verify"])
+            st.text_area("Evidência ou justificativa · até 1.000 caracteres", key=f"wifi_note_{key}", max_chars=1000, on_change=save_wifi_note, args=(key,))
+            st.selectbox("O que você conseguiu verificar?", list(WIFI_STATUSES), format_func=WIFI_STATUSES.get, key=f"wifi_status_{key}", on_change=save_wifi_answer, args=(key,))
+    summary = review_summary(st.session_state.wifi_review)
+    metrics = st.columns(4)
+    for column, status, label in zip(metrics, WIFI_STATUSES, ("Ainda a confirmar", "Ajustes declarados", "Conferidos por você", "Não aplicáveis"), strict=True):
+        column.metric(label, summary["counts"][status])
+    st.caption("Contagem de declarações, sem nota de segurança. Um nome de Wi-Fi diferente ou uma falha de ping não comprovam isolamento.")
+    st.subheader("Próximos passos")
+    for task in summary["tasks"]:
+        st.write(f"**{task['title']}** — {task['action']}")
+    if not summary["tasks"]:
+        st.write("Sem pendências nessas respostas. Revise as evidências após mudanças e periodicamente.")
+    columns = st.columns(2)
+    columns[0].download_button("Revisão Wi-Fi JSON", encode_review(st.session_state.wifi_review), "netguard-revisao-wifi.json", "application/json")
+    columns[1].download_button("Relatório Wi-Fi HTML", review_report(st.session_state.wifi_review), "netguard-revisao-wifi.html", "text/html")
+    st.file_uploader("Restaurar revisão Wi-Fi JSON · até 2 MB", type=["json"], key="wifi_restore_file", on_change=import_wifi_review)
+    st.caption("Este arquivo guarda somente a revisão Wi-Fi. Exporte antes de fechar; avaliação e caderno de logs têm arquivos próprios.")
+    for reference in WIFI_CATALOG["references"]:
+        st.markdown(f"[{reference['name']}]({reference['url']})")
+
+
+def tools_workspace():
+    st.subheader("Aprenda uma ferramenta por vez.")
+    st.caption("As ferramentas são executadas fora do NetGuard. Comece por Packet Tracer e Wireshark; depois avance para inventário e logs.")
+    missions = [
+        ("Cisco Packet Tracer", "https://www.netacad.com/learning-collections/cisco-packet-tracer", "Monte dois computadores e um switch, escolha IPs na mesma sub-rede e acompanhe um ping no modo Simulation. Mude a sub-rede de um computador e explique a falha."),
+        ("Wireshark", "https://www.wireshark.org/docs/wsug_html/", "Abra uma captura de exemplo com DNS, aplique o filtro dns e explique uma consulta e uma resposta. PCAP tem formato diferente dos eventos CSV/JSONL do NetGuard."),
+        ("Nmap", "https://nmap.org/book/man.html", "Em uma máquina sua ou autorizada, compare os serviços esperados com o inventário de portas. Consulte open, closed e filtered no manual; porta aberta não confirma invasão."),
+        ("Wazuh", "https://documentation.wazuh.com/current/getting-started/index.html", "Depois da base, use uma máquina virtual compatível com os requisitos oficiais para acompanhar uma alteração controlada em arquivo monitorado. Registre evento, regra e contexto.")
+    ]
+    for name, url, mission in missions:
+        with st.container(border=True):
+            st.subheader(name)
+            st.write(mission)
+            st.markdown(f"[Referência oficial]({url})")
+    st.markdown("[Capturas de exemplo do Wireshark](https://wiki.wireshark.org/SampleCaptures)")
 
 
 if "answers" not in st.session_state:
@@ -284,56 +386,62 @@ elif page == "Inventário":
     )
 
 elif page == "Laboratório de redes":
-    st.title("Entenda endereços e limites de acesso.")
-    st.caption("Os cálculos e a política abaixo são executados em memória. Não há conexão com equipamentos.")
-    left, right = st.columns(2)
-    with left:
-        with st.container(border=True):
-            st.subheader("Calculadora de sub-rede")
-            cidr = st.text_input("Rede ou endereço com prefixo", "192.168.10.0/24", max_chars=80)
-            try:
-                info = subnet_info(cidr)
-                st.dataframe(
-                    pd.DataFrame([{"campo": key, "valor": str(value)} for key, value in info.items()]),
-                    hide_index=True,
-                    width="stretch",
-                )
-            except ValueError as error:
-                st.warning(str(error))
-            st.caption(
-                "O prefixo define a parte de rede. Um endereço com bits de host é normalizado para a rede correspondente. /31 e /32 têm tratamento próprio no IPv4."
-            )
-    with right:
-        with st.container(border=True):
-            st.subheader("Redes distintas podem se sobrepor")
-            a = st.text_input("Rede interna", "192.168.10.0/24", max_chars=80)
-            b = st.text_input("Rede de visitantes", "192.168.20.0/24", max_chars=80)
-            try:
-                conflicts = overlap_pairs({"Interna": a, "Visitantes": b})
-                if conflicts:
-                    st.warning("As redes se sobrepõem. Revise o plano de endereçamento.")
-                else:
-                    st.success(
-                        "Os endereços não se sobrepõem. O isolamento ainda depende das regras de acesso e de testes."
-                    )
-            except ValueError as error:
-                st.warning(str(error))
-            st.info(
-                "Criar uma VLAN organiza uma rede lógica; o controle de tráfego entre redes exige configuração e validação próprias."
-            )
-    st.subheader("Simule uma regra de acesso")
-    columns = st.columns(3)
-    origin = columns[0].selectbox("Origem", POLICY_ZONES, index=3)
-    destination = columns[1].selectbox("Destino", POLICY_ZONES, index=2)
-    port = columns[2].number_input("Porta TCP do exercício", min_value=1, max_value=65535, value=443)
-    decision = policy_decision(origin, destination, int(port))
-    if decision["decisao"] == "Bloquear":
-        st.warning(f"{decision['decisao']}: {decision['motivo']}")
+    network_mode = st.radio("Prática de redes", ["Conexões e IPs", "Wi-Fi e roteador", "Praticar com ferramentas"], key="network_mode", horizontal=True)
+    if network_mode == "Wi-Fi e roteador":
+        wifi_workspace()
+    elif network_mode == "Praticar com ferramentas":
+        tools_workspace()
     else:
-        st.success(f"{decision['decisao']}: {decision['motivo']}")
-    st.caption(
-        "Política didática com negação padrão. Não representa todos os fluxos de uma empresa: DNS, DHCP, atualizações, IPv6 e retorno de conexões exigem planejamento adicional."
-    )
+        st.title("Entenda endereços e limites de acesso.")
+        st.caption("Os cálculos e a política abaixo são executados em memória. Não há conexão com equipamentos.")
+        left, right = st.columns(2)
+        with left:
+            with st.container(border=True):
+                st.subheader("Calculadora de sub-rede")
+                cidr = st.text_input("Rede ou endereço com prefixo", "192.168.10.0/24", max_chars=80)
+                try:
+                    info = subnet_info(cidr)
+                    st.dataframe(
+                        pd.DataFrame([{"campo": key, "valor": str(value)} for key, value in info.items()]),
+                        hide_index=True,
+                        width="stretch",
+                    )
+                except ValueError as error:
+                    st.warning(str(error))
+                st.caption(
+                    "O prefixo define a parte de rede. Um endereço com bits de host é normalizado para a rede correspondente. /31 e /32 têm tratamento próprio no IPv4."
+                )
+        with right:
+            with st.container(border=True):
+                st.subheader("Redes distintas podem se sobrepor")
+                a = st.text_input("Rede interna", "192.168.10.0/24", max_chars=80)
+                b = st.text_input("Rede de visitantes", "192.168.20.0/24", max_chars=80)
+                try:
+                    conflicts = overlap_pairs({"Interna": a, "Visitantes": b})
+                    if conflicts:
+                        st.warning("As redes se sobrepõem. Revise o plano de endereçamento.")
+                    else:
+                        st.success(
+                            "Os endereços não se sobrepõem. O isolamento ainda depende das regras de acesso e de testes."
+                        )
+                except ValueError as error:
+                    st.warning(str(error))
+                st.info(
+                    "Criar uma VLAN organiza uma rede lógica; o controle de tráfego entre redes exige configuração e validação próprias."
+                )
+        st.subheader("Simule uma regra de acesso")
+        columns = st.columns(3)
+        origin = columns[0].selectbox("Origem", POLICY_ZONES, index=3)
+        destination = columns[1].selectbox("Destino", POLICY_ZONES, index=2)
+        port = columns[2].number_input("Porta TCP do exercício", min_value=1, max_value=65535, value=443)
+        decision = policy_decision(origin, destination, int(port))
+        if decision["decisao"] == "Bloquear":
+            st.warning(f"{decision['decisao']}: {decision['motivo']}")
+        else:
+            st.success(f"{decision['decisao']}: {decision['motivo']}")
+        st.caption(
+            "Política didática com negação padrão. Não representa todos os fluxos de uma empresa: DNS, DHCP, atualizações, IPv6 e retorno de conexões exigem planejamento adicional."
+        )
 
 elif page == "Investigar logs":
     st.title("Investigue um relato, evento por evento.")

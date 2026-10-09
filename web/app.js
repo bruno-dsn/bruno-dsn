@@ -20,6 +20,7 @@ import {
   overlaps,
   policy,
 } from "./core.js";
+import { newWifiReview, validateWifiReview, restoreWifiReview, wifiSummary, wifiHTML } from "./wifi.js";
 
 const ROUTES = [
   "inicio",
@@ -83,12 +84,13 @@ export async function createApp(doc, dependencies = {}) {
       );
     return response;
   };
-  const [catalog, shop, office, financial, benign] = await Promise.all([
+  const [catalog, shop, office, financial, benign, wifiCatalog] = await Promise.all([
     request("data/controls.json").then((r) => r.json()),
     request("data/cenario-loja.json").then((r) => r.text()),
     request("data/cenario-escritorio.json").then((r) => r.text()),
     request("data/caso-financeiro-ficticio.csv").then((r) => r.arrayBuffer()),
     request("data/caso-benigno-ficticio.csv").then((r) => r.arrayBuffer()),
+    request("data/wifi-checklist.json").then((r) => r.json()),
   ]);
   const controls = catalog.controls,
     statuses = catalog.statuses,
@@ -118,6 +120,8 @@ export async function createApp(doc, dependencies = {}) {
     snapshot: restoreAssessment(shop, controls),
     area: "Todas",
     scenario: "loja",
+    networkTab: "enderecos",
+    wifi: newWifiReview(wifiCatalog),
     network: {
       cidr: "192.0.2.48/24",
       source: "visitantes",
@@ -390,7 +394,30 @@ export async function createApp(doc, dependencies = {}) {
         "",
       )}</div><div class="button-row section"><button class="small" data-action="save-asset">Salvar ativo</button><button class="small secondary" data-action="cancel-asset">Cancelar edição</button></div></section>`;
   }
+  function networkTabs() {
+    return `<div class="tabs" role="group" aria-label="Práticas de segurança de redes">${[["enderecos", "Conexões e IPs"], ["wifi", "Wi-Fi e roteador"], ["ferramentas", "Praticar com ferramentas"]].map(([id, title]) => `<button class="tab" id="network-tab-${id}" data-action="network-tab" data-value="${id}" aria-pressed="${state.networkTab === id}">${title}</button>`).join("")}</div>`;
+  }
   function networks() {
+    if (state.networkTab === "wifi") return wifiReview();
+    if (state.networkTab === "ferramentas") return toolsPractice();
+    return addressLab();
+  }
+  function wifiReview() {
+    const { counts, tasks } = wifiSummary(state.wifi, wifiCatalog);
+    return h("Comece a conferir seu Wi-Fi.", "Uma revisão guiada do roteador, dos acessos e dos registros. Anote o que você conseguiu conferir e transforme dúvidas em próximos passos.", "REDES · WI-FI E ROTEADOR", "REVISÃO DECLARADA") + networkTabs() +
+      notice("As respostas são suas declarações. O aplicativo não conecta o roteador, descobre dispositivos ou mede a segurança da rede. Use uma rede sua ou autorizada para a revisão.") +
+      `<section class="panel"><div class="field"><label for="wifi-network-name">Nome para esta revisão · até 100 caracteres</label><input id="wifi-network-name" value="${e(state.wifi.network_name)}" maxlength="100"></div><p class="small-text section">Registre versão, data e referência da verificação. Evite anotar senhas, tokens ou dados pessoais. Para marcar “Conferido por mim” ou “Não se aplica”, escreva primeiro a evidência ou justificativa.</p><div class="button-row section"><button data-action="export-wifi">Revisão JSON ↓</button><button class="secondary" data-action="export-wifi-html">Relatório HTML ↓</button></div><div class="field section"><label for="wifi-file">Restaurar revisão Wi-Fi · JSON de até 2 MB</label><input id="wifi-file" type="file" accept=".json" data-upload="wifi"><small>Este arquivo guarda somente a revisão Wi-Fi. A avaliação dos 18 controles e o caderno de logs têm exportações próprias. Exporte antes de fechar ou recarregar.</small></div></section><div class="stat-grid section">${stat("Ainda a confirmar", counts.unknown)}${stat("Ajustes declarados", counts.review)}${stat("Conferidos por você", counts.checked)}${stat("Não aplicáveis", counts.na)}</div><p class="stat-caption">Contagem de respostas; sem percentual ou garantia de proteção. “Conferido” é uma declaração do usuário, acompanhada de uma nota.</p><div class="grid cols-2">${wifiCatalog.controls.map((control, i) => `<article class="panel"><span class="eyebrow">REVISÃO ${String(i + 1).padStart(2, "0")}</span><h2>${e(control.title)}</h2><p>${e(control.why)}</p><details class="section"><summary>Como conferir sem precisar saber tudo?</summary><p class="section">${e(control.verify)}</p></details><div class="field section"><label for="wifi-note-${control.id}">Evidência ou justificativa · até 1.000 caracteres</label><textarea id="wifi-note-${control.id}" data-wifi-note="${control.id}" maxlength="1000" rows="3" placeholder="Ex.: conferi a configuração com o responsável em 09/10; falta testar o bloqueio ao servidor.">${e(state.wifi.notes[control.id])}</textarea></div><div class="field section"><label for="wifi-status-${control.id}">O que você conseguiu verificar?</label><select id="wifi-status-${control.id}" data-wifi-status="${control.id}">${Object.entries(wifiCatalog.statuses).map(([id, label]) => option(id, label, state.wifi.answers[control.id])).join("")}</select></div></article>`).join("")}</div><section class="section"><div class="section-heading"><h2>O próximo passo fica claro.</h2><p>Uma informação desconhecida pede confirmação. Um ajuste declarado pede planejamento e validação.</p></div><div class="plan-list">${tasks.map((task) => `<article class="plan-row"><span class="pill ${task.status === "review" ? "warn" : ""}">${task.status === "review" ? "Planejar ajuste" : "Confirmar"}</span><div><h3>${e(task.title)}</h3><p>${e(task.action)}</p></div></article>`).join("") || '<div class="empty"><p>Não há pendências nessas respostas. Revise as evidências após mudanças e periodicamente.</p></div>'}</div></section><section class="panel section"><h2>Entenda o teste de visitantes.</h2><p>Você pode ter internet funcionando e, ao mesmo tempo, manter os sistemas internos inacessíveis aos visitantes. O isolamento precisa ser configurado e testado; não depende apenas do nome da rede.</p><button class="secondary" data-action="guest-example">Ver a regra no exercício de conexões →</button><p class="small-text section">A simulação ensina a regra. Ela não comprova o isolamento de uma rede real.</p></section><p class="small-text section">Referências: ${wifiCatalog.references.map((ref) => `<a href="${e(ref.url)}" target="_blank" rel="noopener noreferrer">${e(ref.name)}</a>`).join(" · ")}. Checklist e textos são próprios do NetGuard.</p>`;
+  }
+  function toolsPractice() {
+    const tools = [
+      { name: "Cisco Packet Tracer", stage: "01 · COMEÇAR", url: "https://www.netacad.com/learning-collections/cisco-packet-tracer", purpose: "Monte uma rede simulada e acompanhe os pacotes no modo Simulation.", mission: "Ligue dois computadores a um switch. Configure endereços na mesma sub-rede e acompanhe um ping. Depois mude a sub-rede de um computador e investigue a falha.", delivery: "Um desenho da topologia, os endereços escolhidos e sua explicação sobre a falha." },
+      { name: "Wireshark", stage: "02 · OBSERVAR", url: "https://www.wireshark.org/docs/wsug_html/", purpose: "Abra uma captura e leia os detalhes dos pacotes. Comece por um arquivo de exemplo antes de capturar sua própria rede.", mission: "Escolha uma captura de exemplo que tenha DNS. Use o filtro dns e compare consulta, resposta e endereços. Explore também arp ou tcp em uma captura que contenha esses protocolos.", delivery: "Dois pacotes explicados: quem enviou, qual protocolo aparece e o que a resposta informa." },
+      { name: "Nmap", stage: "03 · CONFERIR SERVIÇOS", url: "https://nmap.org/book/man.html", purpose: "Identifique portas e serviços em uma máquina de laboratório sua ou autorizada.", mission: "Compare os serviços que deveriam estar ativos com o resultado do inventário. Consulte no manual o significado de open, closed e filtered. Porta aberta indica um serviço acessível no teste; não confirma invasão.", delivery: "Uma tabela com serviço esperado, observação, pergunta pendente e próximo passo." },
+      { name: "Wazuh", stage: "04 · ACOMPANHAR LOGS", url: "https://documentation.wazuh.com/current/getting-started/index.html", purpose: "Depois da base de redes, pratique coleta de eventos e alertas com um agente e os componentes centrais.", mission: "Siga o laboratório oficial em uma máquina virtual compatível com os requisitos. Acompanhe uma alteração controlada em um arquivo monitorado e compare registro, alerta e contexto.", delivery: "Um pequeno relato do evento, da regra que alertou e do que ainda precisaria confirmar." },
+    ];
+    return h("Aprenda uma ferramenta por vez.", "Comece por Packet Tracer e Wireshark. Avance para inventário e acompanhamento de logs conforme dominar os exercícios anteriores.", "REDES · PRIMEIRAS PRÁTICAS") + networkTabs() + notice("As ferramentas são executadas fora do NetGuard. Aqui você encontra missões e referências oficiais; os resultados não são coletados automaticamente.") + `<div class="grid cols-2">${tools.map((tool) => `<article class="panel"><span class="eyebrow">${tool.stage}</span><h2>${tool.name}</h2><p>${tool.purpose}</p><h3 class="section">Sua primeira missão</h3><p>${tool.mission}</p><h3 class="section">O que guardar no portfólio</h3><p>${tool.delivery}</p><a class="text-link section" href="${tool.url}" target="_blank" rel="noopener noreferrer">Abrir a referência oficial ↗</a></article>`).join("")}</div><section class="panel section"><h2>Capturas para começar no Wireshark</h2><p>A comunidade do Wireshark mantém capturas de exemplo. Escolha uma de protocolo básico e leia a descrição. Um arquivo PCAP tem um formato diferente do CSV ou JSONL de eventos do NetGuard.</p><a class="text-link" href="https://wiki.wireshark.org/SampleCaptures" target="_blank" rel="noopener noreferrer">Abrir SampleCaptures ↗</a></section>`;
+  }
+  function addressLab() {
     let net, error;
     try {
       net = subnet(state.network.cidr);
@@ -433,6 +460,7 @@ export async function createApp(doc, dependencies = {}) {
         "LABORATÓRIO · REDES E SEGMENTAÇÃO",
         "SIMULAÇÃO OFFLINE",
       ) +
+      networkTabs() +
       notice(
         "Este laboratório calcula endereços e simula uma política TCP. Ele não escaneia redes, testa conexões ou configura um firewall.",
       ) +
@@ -651,6 +679,22 @@ export async function createApp(doc, dependencies = {}) {
           "text/html;charset=utf-8",
         );
         return;
+      } else if (action === "network-tab") {
+        if (!["enderecos", "wifi", "ferramentas"].includes(button.dataset.value))
+          throw new Error("Escolha uma prática de redes válida.");
+        state.networkTab = button.dataset.value;
+      } else if (action === "guest-example") {
+        state.networkTab = "enderecos";
+        state.network.source = "visitantes";
+        state.network.destination = "servidores";
+        state.network.port = 443;
+      } else if (action === "export-wifi") {
+        validateWifiReview(state.wifi, wifiCatalog);
+        download(JSON.stringify(state.wifi, null, 2), "netguard-revisao-wifi.json");
+        return;
+      } else if (action === "export-wifi-html") {
+        download(wifiHTML(state.wifi, wifiCatalog), "netguard-revisao-wifi.html", "text/html;charset=utf-8");
+        return;
       } else if (action === "export-assessment") {
         download(
           JSON.stringify(state.snapshot, null, 2),
@@ -727,6 +771,8 @@ export async function createApp(doc, dependencies = {}) {
         return;
       } else if (action === "confirm-reset") {
         state.sequence++;
+        state.wifi = newWifiReview(wifiCatalog);
+        state.networkTab = "enderecos";
         state.notebooks.clear();
         state.assetDraft = null;
         state.snapshot = {
@@ -774,6 +820,26 @@ export async function createApp(doc, dependencies = {}) {
       notes()[target.dataset.note] = target.value;
       doc.getElementById("count-" + target.dataset.note).textContent =
         `${target.value.length} / 3.000`;
+      return;
+    }
+    if (target.dataset.wifiNote) {
+      const id = target.dataset.wifiNote;
+      if (!Object.hasOwn(state.wifi.notes, id)) return;
+      if (target.value.length > 1000) {
+        target.value = state.wifi.notes[id];
+        notify("Use uma nota de até 1.000 caracteres.", true);
+        return;
+      }
+      if (["checked", "na"].includes(state.wifi.answers[id]) && !target.value.trim()) {
+        target.value = state.wifi.notes[id];
+        notify("Altere primeiro a resposta para manter a evidência ou justificativa obrigatória.", true);
+        return;
+      }
+      state.wifi.notes[id] = target.value;
+      return;
+    }
+    if (target.id === "wifi-network-name") {
+      state.wifi.network_name = target.value.trim().slice(0, 100) || "Minha rede";
       return;
     }
     if (target.dataset.evidence) {
@@ -858,6 +924,10 @@ export async function createApp(doc, dependencies = {}) {
             notify(
               "Caderno restaurado para este recorte, com notas e parâmetros.",
             );
+          } else if (target.dataset.upload === "wifi") {
+            const restored = restoreWifiReview(source, wifiCatalog);
+            state.wifi = restored;
+            notify("Revisão Wi-Fi validada e restaurada. As respostas continuam sendo declarações.");
           } else if (target.dataset.upload === "assessment") {
             const restored = restoreAssessment(source, controls);
             state.snapshot = restored;
@@ -941,6 +1011,15 @@ export async function createApp(doc, dependencies = {}) {
         notify(
           "Cenário carregado. As notas dos casos de investigação foram preservadas.",
         );
+      } else if (target.dataset.wifiStatus) {
+        const id = target.dataset.wifiStatus;
+        if (!Object.hasOwn(state.wifi.answers, id) || !Object.hasOwn(wifiCatalog.statuses, target.value))
+          throw new Error("Resposta de revisão Wi-Fi inválida.");
+        if (["checked", "na"].includes(target.value) && !state.wifi.notes[id].trim()) {
+          target.value = state.wifi.answers[id];
+          throw new Error("Escreva primeiro a evidência ou justificativa para esta resposta.");
+        }
+        state.wifi.answers[id] = target.value;
       } else if (target.dataset.control) {
         const id = target.dataset.control;
         if (target.value === "na" && !state.snapshot.notes[id]?.trim()) {

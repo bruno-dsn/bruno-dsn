@@ -30,3 +30,16 @@ Dados sintéticos ajudam a verificar o funcionamento, mas não demonstram eficá
 ## Registre seu aprendizado
 
 Para cada exercício, escreva o problema, a hipótese, o que você executou, o resultado e o que não conseguiu validar. Um teste que falha e leva a uma correção pode ser uma boa evidência, desde que você consiga explicar a causa.
+
+## Quatro primeiras ferramentas, com uma entrega por vez
+
+1. **[Cisco Packet Tracer](https://www.netacad.com/learning-collections/cisco-packet-tracer):** monte dois computadores e um switch, escolha endereços na mesma sub-rede e acompanhe um ping no modo Simulation. Mude a sub-rede de um computador e explique por que o caminho falhou. Guarde a topologia e sua explicação.
+2. **[Wireshark](https://www.wireshark.org/docs/wsug_html/):** abra uma [captura de exemplo](https://wiki.wireshark.org/SampleCaptures) que contenha DNS; use `dns` e compare consulta e resposta. Em outras capturas, explore `arp` e `tcp`. Explique dois pacotes. PCAP não é um arquivo de eventos do NetGuard.
+3. **[Nmap](https://nmap.org/book/man.html):** em uma máquina de laboratório sua ou autorizada, compare serviços esperados e portas observadas. Consulte `open`, `closed` e `filtered` no manual. Um serviço acessível não confirma invasão. Guarde uma tabela com pergunta e próxima verificação.
+4. **[Wazuh](https://documentation.wazuh.com/current/getting-started/index.html):** depois da base, monte um laboratório seguindo os requisitos oficiais, com agente e componentes centrais. Observe uma alteração controlada em arquivo monitorado; explique evento, regra e contexto.
+
+Essas são sugestões de sequência do NetGuard, não um currículo oficial das ferramentas. Comece pelas duas primeiras e avance quando conseguir explicar o exercício. A área **Redes → Praticar com ferramentas** resume as missões nas duas edições.
+
+## Uma revisão pequena da sua rede
+
+Use **Redes → Wi-Fi e roteador**. Registre o que foi consultado, com responsável, data e uma referência. Para visitantes, planeje com o administrador um teste de acesso permitido à internet e um teste de bloqueio de um serviço interno conhecido. Uma falha de ping pode ter outra causa. Exporte a revisão antes de encerrar e reveja após mudanças.
