@@ -1,3 +1,5 @@
+> Este é o snapshot histórico usado na migração. Continue pelo **[repositório próprio do NetGuard Lab](https://github.com/bruno-dsn/netguard-lab)**.
+
 # NetGuard Lab
 
 **Primeiros ajustes de segurança, revisão de redes e investigação de logs para quem está começando.**
@@ -8,7 +10,7 @@ Uma pequena empresa sabe que precisa se proteger, mas nem sempre sabe por onde c
 
 [Abrir a edição web pública](https://netguard-lab.brdsnunes.chatgpt.site) · [Executar localmente](#executar-localmente) · [Investigar um caso](docs/INVESTIGACAO_DE_LOGS.md) · [Trilha de estudo](docs/TRILHA_DE_ESTUDO.md) · [Ponto de retomada](docs/CONTINUIDADE.md)
 
-**Localização no GitHub:** o projeto está na branch [`netguard-lab`](https://github.com/bruno-dsn/bruno-dsn/tree/netguard-lab) do repositório de perfil `bruno-dsn/bruno-dsn`. A criação de um repositório independente continua pendente. O aplicativo publicado tem acesso público para estudar e compartilhar com os colegas.
+**Repositório do projeto:** [`bruno-dsn/netguard-lab`](https://github.com/bruno-dsn/netguard-lab), com código, imagens, exemplos e testes na branch `main`. O aplicativo publicado tem acesso público para estudar e compartilhar com os colegas.
 
 ## Novidades da versão 2.1
 
@@ -61,10 +63,10 @@ O registro de uma conexão em RDP justifica uma verificação, mas não determin
 
 ## Executar localmente
 
-O código inicial está na branch `netguard-lab` do repositório de perfil. [Baixe o ZIP](https://github.com/bruno-dsn/bruno-dsn/archive/refs/heads/netguard-lab.zip) ou clone somente essa branch:
+[Baixe o ZIP](https://github.com/bruno-dsn/netguard-lab/archive/refs/heads/main.zip) ou clone o repositório:
 
 ```bash
-git clone --branch netguard-lab --single-branch https://github.com/bruno-dsn/bruno-dsn.git netguard-lab
+git clone https://github.com/bruno-dsn/netguard-lab.git
 cd netguard-lab
 ```
 
