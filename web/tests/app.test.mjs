@@ -144,6 +144,18 @@ test("case switching preserves each notebook and recomputes signals", async () =
     );
     f.change("shared", false);
     assert.equal(f.app.result.signal_count, 5);
+    f.change("case-select", "benigno");
+    f.change("case-select", "arquivo");
+    f.click("tab", "intro");
+    assert.match(
+      f.doc.querySelector("main").textContent,
+      /A pessoa esqueceu a senha/,
+    );
+    assert.ok(
+      !f.doc
+        .querySelector("main")
+        .textContent.includes("A equipe da Loja Aurora relata"),
+    );
   } finally {
     f.close();
   }
