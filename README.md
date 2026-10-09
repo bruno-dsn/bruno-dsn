@@ -1,24 +1,41 @@
 # Bruno Nunes
 
-![Bruno Nunes](assets/profile-cover.svg)
+![Bruno Nunes — redes, segurança e dados em um terminal verde](assets/profile-cover.svg)
 
-Sou formado em **Redes de Computadores desde 2017** e estudante de **Inteligência Artificial e Machine Learning**. Estou construindo experiência prática em dados, engenharia de dados e IA por meio de projetos reproduzíveis, com documentação e explicação dos resultados. Também estou retomando o estudo de redes e cibersegurança.
+> Curiosidade para aprender. Cuidado para investigar. Projetos para construir experiência.
 
-[LinkedIn](https://www.linkedin.com/in/bruno-dsnunes/) · [E-mail](mailto:brdsnunes@gmail.com) · [Todos os repositórios](https://github.com/bruno-dsn?tab=repositories)
+Sou formado em **Redes de Computadores desde 2017** e estudante de **Inteligência Artificial e Machine Learning**. Estou retomando redes e cibersegurança por meio de laboratórios práticos, enquanto construo projetos em dados, engenharia de dados e IA.
 
-## NetGuard Lab — acesso direto
+O visual Green Hat representa meu momento de aprendizado: estudar, testar em laboratório e explicar o que consegui descobrir.
 
-O **NetGuard Lab** está na branch `netguard-lab` deste repositório. Por enquanto ele **não aparece como um repositório separado** na aba Repositories.
+[**LinkedIn**](https://www.linkedin.com/in/bruno-dsnunes/) · [**E-mail**](mailto:brdsnunes@gmail.com) · [**Todos os repositórios**](https://github.com/bruno-dsn?tab=repositories)
 
-[**Ver o código e o README do NetGuard**](https://github.com/bruno-dsn/bruno-dsn/tree/netguard-lab) · [**Abrir o aplicativo — acesso privado do autor**](https://netguard-lab.brdsnunes.chatgpt.site) · [Baixar o projeto em ZIP](https://github.com/bruno-dsn/bruno-dsn/archive/refs/heads/netguard-lab.zip)
+## 🛡️ NetGuard Lab — comece por aqui
 
-No GitHub, abra este repositório e troque `main` por `netguard-lab` no seletor de branches para explorar os arquivos. O aplicativo ajuda iniciantes a ler logs, investigar casos fictícios e organizar os primeiros ajustes de segurança.
+**Um laboratório para entender logs e organizar os primeiros ajustes de segurança.**
 
-## Explore meu trabalho
+[**▶ Abrir o aplicativo**](https://netguard-lab.brdsnunes.chatgpt.site) · [**⌘ Ver o código e o README**](https://github.com/bruno-dsn/bruno-dsn/tree/netguard-lab) · [**↓ Baixar o ZIP**](https://github.com/bruno-dsn/bruno-dsn/archive/refs/heads/netguard-lab.zip)
+
+| Quero aprender a… | Onde começar |
+| --- | --- |
+| Ler um registro sem experiência | **Ler um log** — campos e explicações em linguagem simples |
+| Investigar um relato | **Investigar** — linha do tempo, sinais, alternativas e caderno |
+| Revisar Wi-Fi e roteador | **Redes → Wi-Fi e roteador** — seis pontos com evidências |
+| Conhecer ferramentas | **Redes → Praticar com ferramentas** — Packet Tracer, Wireshark, Nmap e Wazuh |
+| Organizar os próximos ajustes | **Proteção inicial**, **Inventário** e **Meu plano** |
+
+O aplicativo pode ser aberto pelos colegas pelo link. Arquivos e notas da edição web ficam na memória do navegador; exporte para continuar depois.
+
+**Onde está no GitHub?** O código está na branch `netguard-lab` deste repositório de perfil. Ainda não é um repositório independente na aba Repositories. Use o link **Ver o código** acima ou troque `main` por `netguard-lab` no seletor de branches.
+
+## 🌐 O próximo laboratório
+
+**Rede em Movimento**: um projeto separado para reaprender redes com desenhos, animações por etapas, as sete camadas OSI e desafios práticos. A primeira missão acompanha o caminho de uma requisição ao abrir um site. Em preparação; a publicação será indicada aqui quando estiver confirmada.
+
+## 🧩 Explore meus outros projetos
 
 | Projeto | O que você pode explorar |
 | --- | --- |
-| [NetGuard Lab](https://github.com/bruno-dsn/bruno-dsn/tree/netguard-lab) | Primeiros ajustes de segurança, revisão de redes e investigação guiada de logs com casos fictícios |
 | [Lab Bricks](https://github.com/bruno-dsn/lab-bricks) | Escola prática de dados e Databricks, exercícios, SQL, BI, ML e IA com evidências |
 | [VolunTech](https://github.com/bruno-dsn/VolunTech-FAM) | Gestão acadêmica de voluntariado, operações e laboratório SQL |
 | [SQL sem Mistério](https://github.com/bruno-dsn/sql-guia-visual) | Consultas explicadas, tabelas visíveis e desafios para começar em SQL |
@@ -31,18 +48,21 @@ No GitHub, abra este repositório e troque `main` por `netguard-lab` no seletor 
 | [Reforma Tributária](https://github.com/bruno-dsn/reforma-tributaria-2026) | Fontes legais, transição e simulações educacionais |
 | [Painel B3](https://github.com/bruno-dsn/painel-precos-acoes) | Retorno, volatilidade, drawdown e correlação com fonte identificada |
 
-## Como apresento os projetos
 
-O NetGuard Lab começa em uma branch própria, `netguard-lab`, neste repositório de perfil. O código tem documentação, testes e instruções para executar localmente.
+## 🟢 Meu jeito de aprender
 
-Cada README explica o problema, a origem dos dados, como executar e os limites do resultado. Dados sintéticos são identificados como sintéticos. Métricas de uma demonstração não representam experiência em uma empresa ou validação de um produto em produção.
+```text
+observar → formular uma hipótese → testar → registrar → explicar
+```
 
-As tecnologias presentes nos projetos incluem Python, SQL, pandas, scikit-learn, Streamlit, TypeScript e React. O Lab Bricks também contém práticas para executar em uma conta Databricks, cuja validação nativa é registrada separadamente dos testes locais.
+Cada README explica o problema, a origem dos dados, como executar e os limites do resultado. Identifico dados sintéticos e separo os resultados de laboratório de experiência profissional ou validação em produção.
 
-## Repositórios de estudo
+As tecnologias dos projetos incluem **Python, SQL, pandas, scikit-learn, Streamlit, TypeScript e React**. O Lab Bricks também contém práticas para uma conta Databricks, cuja validação nativa é registrada separadamente dos testes locais.
 
-Também mantenho forks de [REA](https://github.com/bruno-dsn/rea) e [Vibe Coding Toolkit](https://github.com/bruno-dsn/vibe-coding-toolkit). São projetos de outros autores que uso como referência de estudo; os créditos e as licenças estão nos respectivos repositórios.
+## 📚 Referências de estudo
+
+Também mantenho forks de [REA](https://github.com/bruno-dsn/rea) e [Vibe Coding Toolkit](https://github.com/bruno-dsn/vibe-coding-toolkit). São projetos de outros autores que uso para estudar; os créditos e as licenças estão nos respectivos repositórios.
 
 Estou aberto a oportunidades de início de carreira em dados e tecnologia. Você pode falar comigo pelo [LinkedIn](https://www.linkedin.com/in/bruno-dsnunes/) ou por [e-mail](mailto:brdsnunes@gmail.com).
 
-[Apoiar meus estudos](https://buymeacoffee.com/brunonunes)
+[**Ponto de retomada do nosso trabalho**](https://github.com/bruno-dsn/bruno-dsn/blob/netguard-lab/docs/CONTINUIDADE.md) · [Apoiar meus estudos](https://buymeacoffee.com/brunonunes)
