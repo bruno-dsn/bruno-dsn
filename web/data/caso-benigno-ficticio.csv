@@ -1,0 +1,9 @@
+﻿event_id,timestamp,origem,usuario,ip,sessao,acao,resultado,recurso,valor_brl
+E001,2026-10-07T12:00:00Z,autenticacao,financeiro.demo,192.0.2.14,S-10,login,sucesso,erp-ficticio,
+E002,2026-10-08T12:00:00Z,autenticacao,financeiro.demo,192.0.2.14,,login,falha,erp-ficticio,
+E003,2026-10-08T12:01:00Z,autenticacao,financeiro.demo,192.0.2.14,,login,falha,erp-ficticio,
+E004,2026-10-08T12:02:00Z,autenticacao,financeiro.demo,192.0.2.14,,login,falha,erp-ficticio,
+E005,2026-10-08T12:03:00Z,autenticacao,financeiro.demo,192.0.2.14,,login,falha,erp-ficticio,
+E006,2026-10-08T12:04:00Z,autenticacao,financeiro.demo,192.0.2.14,,login,falha,erp-ficticio,
+E007,2026-10-08T12:06:00Z,autenticacao,financeiro.demo,192.0.2.14,S-10,login,sucesso,erp-ficticio,
+B001,2026-10-08T13:00:00Z,financeiro,financeiro.demo,192.0.2.14,S-10,transferencia,sucesso,fornecedor-teste,800.00

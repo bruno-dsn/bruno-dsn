@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Aprenda a ler logs, investigar um caso fictício e planejar os primeiros ajustes de segurança. Um laboratório de cibersegurança para quem está começando."
+    />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <meta name="theme-color" content="#f7eacb" />
+    <title>NetGuard Lab · Segurança, um passo de cada vez</title>
+    <link rel="icon" href="shield.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Pular para o conteúdo</a>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="NetGuard Lab, início"
+        ><img src="shield.svg" width="34" height="38" alt="" /><span
+          >NetGuard<span class="brand-lab">LAB</span></span
+        ></a
+      >
+      <button
+        class="menu-button secondary small"
+        id="menu-button"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >
+        Menu <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="navigation" aria-label="Áreas do laboratório">
+        <a href="#inicio">Início</a><a href="#aprender">Ler um log</a
+        ><a href="#investigar">Investigar</a
+        ><a href="#diagnostico">Proteção inicial</a
+        ><a href="#inventario">Inventário</a><a href="#redes">Redes</a
+        ><a href="#plano">Meu plano</a>
+      </nav>
+      <button
+        class="motion-button"
+        id="motion-button"
+        aria-pressed="false"
+        title="Reduzir animações"
+      >
+        <span aria-hidden="true">◉</span
+        ><span id="motion-label">Movimento</span>
+      </button>
+    </header>
+    <div class="session-ribbon">
+      <span><i aria-hidden="true"></i> Laboratório didático</span
+      ><span>Exemplos fictícios · arquivos processados neste navegador</span>
+    </div>
+    <main id="main" tabindex="-1">
+      <div class="loading">
+        <span class="eyebrow">NETGUARD LAB</span>
+        <h1>Preparando seu laboratório…</h1>
+        <p>Carregando os exemplos fictícios.</p>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <a class="footer-brand" href="#inicio">NetGuard Lab ↗</a>
+        <p>Aprender. Verificar. Proteger melhor.</p>
+        <span>Feito por Bruno Nunes · v2.0</span>
+      </div>
+      <div>
+        <p>Continue explorando</p>
+        <a href="https://github.com/bruno-dsn/bruno-dsn/tree/netguard-lab"
+          >Código e versão Python ↗</a
+        ><a
+          href="https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html"
+          >Guia de logs · OWASP ↗</a
+        ><a href="https://csrc.nist.gov/pubs/sp/800/61/r3/final"
+          >Resposta a incidentes · NIST ↗</a
+        >
+      </div>
+      <p class="footer-note">
+        Suas notas ficam nesta sessão. Exporte o caderno para continuar depois.
+        As regras ajudam a investigar; um sinal precisa de contexto e
+        confirmação.
+      </p>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <dialog id="reset-dialog">
+      <h2>Limpar a sessão?</h2>
+      <p>
+        As notas, arquivos importados e respostas serão removidos desta sessão.
+        Exporte seu trabalho antes de continuar.
+      </p>
+      <div class="button-row">
+        <button class="secondary" data-action="cancel-reset">
+          Continuar trabalhando</button
+        ><button data-action="confirm-reset">Limpar sessão</button>
+      </div>
+    </dialog>
+    <noscript
+      ><p class="notice">
+        Ative o JavaScript para usar este laboratório. A versão Python e os
+        guias também estão disponíveis no GitHub.
+      </p></noscript
+    >
+  </body>
+</html>

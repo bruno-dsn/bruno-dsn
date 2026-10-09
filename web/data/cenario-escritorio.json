@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "cenario": "Escritório Aurora · fictício",
+  "answers": {
+    "gv01": "implemented",
+    "gv02": "implemented",
+    "gv03": "implemented",
+    "id01": "implemented",
+    "id02": "implemented",
+    "id03": "implemented",
+    "pr01": "implemented",
+    "pr02": "implemented",
+    "pr03": "implemented",
+    "pr04": "implemented",
+    "pr05": "implemented",
+    "de01": "implemented",
+    "de02": "partial",
+    "rs01": "implemented",
+    "rs02": "partial",
+    "rc01": "implemented",
+    "rc02": "unknown",
+    "rc03": "implemented"
+  },
+  "notes": {
+    "gv01": "Evidência fictícia do cenário de escritório.",
+    "gv02": "Evidência fictícia do cenário de escritório.",
+    "gv03": "Evidência fictícia do cenário de escritório.",
+    "id01": "Evidência fictícia do cenário de escritório.",
+    "id02": "Evidência fictícia do cenário de escritório.",
+    "id03": "Evidência fictícia do cenário de escritório.",
+    "pr01": "Evidência fictícia do cenário de escritório.",
+    "pr02": "Evidência fictícia do cenário de escritório.",
+    "pr03": "Evidência fictícia do cenário de escritório.",
+    "pr04": "Evidência fictícia do cenário de escritório.",
+    "pr05": "Evidência fictícia do cenário de escritório.",
+    "de01": "Evidência fictícia do cenário de escritório.",
+    "rs01": "Evidência fictícia do cenário de escritório.",
+    "rc01": "Evidência fictícia do cenário de escritório.",
+    "rc03": "Evidência fictícia do cenário de escritório."
+  },
+  "assets": [
+    {
+      "id": "srv-01",
+      "nome": "Servidor financeiro fictício",
+      "tipo": "servidor",
+      "zona": "servidores",
+      "ip": "192.168.10.10",
+      "exposto_internet": "nao",
+      "mfa": "sim",
+      "atualizado": "sim",
+      "backup_testado": "sim",
+      "portas": "443"
+    },
+    {
+      "id": "pc-01",
+      "nome": "Atendimento fictício",
+      "tipo": "computador",
+      "zona": "interna",
+      "ip": "192.168.20.10",
+      "exposto_internet": "nao",
+      "mfa": "sim",
+      "atualizado": "sim",
+      "backup_testado": "sim",
+      "portas": "443"
+    }
+  ]
+}

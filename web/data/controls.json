@@ -1,0 +1,191 @@
+{
+  "controls": [
+    {
+      "id": "gv01",
+      "area": "Governar",
+      "title": "Responsável pela segurança",
+      "question": "Há uma pessoa responsável por coordenar segurança e decidir prioridades?",
+      "action": "Definir responsável, substituto e um canal para comunicar problemas.",
+      "evidence": "Nome da função, responsabilidades e canal de contato; evite dados pessoais no exemplo.",
+      "weight": 3,
+      "days": 7
+    },
+    {
+      "id": "gv02",
+      "area": "Governar",
+      "title": "Regras de acesso",
+      "question": "A equipe conhece as regras de uso, acesso e desligamento?",
+      "action": "Documentar regras curtas e revisar o acesso ao mudar de função ou sair da empresa.",
+      "evidence": "Política de acesso e registro de uma revisão fictícia.",
+      "weight": 3,
+      "days": 14
+    },
+    {
+      "id": "gv03",
+      "area": "Governar",
+      "title": "Fornecedores críticos",
+      "question": "Fornecedores de e-mail, sistemas e backup têm responsável e contato de suporte registrados?",
+      "action": "Listar fornecedores críticos, suporte e responsabilidades na recuperação.",
+      "evidence": "Lista de fornecedores e serviços críticos.",
+      "weight": 2,
+      "days": 30
+    },
+    {
+      "id": "id01",
+      "area": "Identificar",
+      "title": "Inventário de ativos",
+      "question": "Equipamentos, serviços, contas e responsáveis estão inventariados?",
+      "action": "Inventariar ativos e identificar quem mantém cada serviço.",
+      "evidence": "Inventário revisado com data e responsável por função.",
+      "weight": 4,
+      "days": 7
+    },
+    {
+      "id": "id02",
+      "area": "Identificar",
+      "title": "Dados e serviços essenciais",
+      "question": "Vocês sabem quais dados e serviços a empresa precisa recuperar primeiro?",
+      "action": "Identificar serviços essenciais e combinar a ordem de recuperação com o negócio.",
+      "evidence": "Lista de serviços, impacto de indisponibilidade e prioridades.",
+      "weight": 4,
+      "days": 7
+    },
+    {
+      "id": "id03",
+      "area": "Identificar",
+      "title": "Exposição e ciclo de vida",
+      "question": "Serviços expostos e equipamentos sem suporte são conhecidos?",
+      "action": "Revisar exposição externa e planejar atualização ou substituição de equipamentos sem suporte.",
+      "evidence": "Registro da revisão de exposição e suporte; não inclua senhas.",
+      "weight": 5,
+      "days": 7
+    },
+    {
+      "id": "pr01",
+      "area": "Proteger",
+      "title": "MFA nas contas críticas",
+      "question": "E-mail, acesso remoto e contas administrativas usam autenticação multifator?",
+      "action": "Habilitar MFA nas contas críticas, preferindo opções resistentes a phishing quando disponíveis.",
+      "evidence": "Checklist de MFA por serviço e procedimento de recuperação de acesso.",
+      "weight": 5,
+      "days": 7
+    },
+    {
+      "id": "pr02",
+      "area": "Proteger",
+      "title": "Contas individuais e privilégios",
+      "question": "As contas são individuais, com privilégios limitados ao trabalho de cada pessoa?",
+      "action": "Eliminar contas compartilhadas quando possível e separar contas administrativas das de uso diário.",
+      "evidence": "Matriz de acesso revisada e procedimento de desligamento.",
+      "weight": 4,
+      "days": 14
+    },
+    {
+      "id": "pr03",
+      "area": "Proteger",
+      "title": "Atualizações e proteção dos dispositivos",
+      "question": "Sistemas e dispositivos recebem atualizações e a proteção dos endpoints é acompanhada?",
+      "action": "Definir uma rotina de atualização, priorizando correções relevantes para os ativos expostos.",
+      "evidence": "Calendário de atualização e relatório de cobertura dos dispositivos.",
+      "weight": 5,
+      "days": 7
+    },
+    {
+      "id": "pr04",
+      "area": "Proteger",
+      "title": "Separação de redes",
+      "question": "Visitantes e dispositivos IoT ficam separados dos serviços internos?",
+      "action": "Planejar redes separadas e validar regras de acesso entre elas com a equipe responsável.",
+      "evidence": "Mapa de redes e teste controlado das regras; VLAN sozinha não prova isolamento.",
+      "weight": 4,
+      "days": 14
+    },
+    {
+      "id": "pr05",
+      "area": "Proteger",
+      "title": "Senhas e phishing",
+      "question": "A equipe usa senhas únicas e sabe como comunicar mensagens suspeitas?",
+      "action": "Adotar um gerenciador de senhas adequado e orientar a equipe sobre como reportar suspeitas.",
+      "evidence": "Orientação curta e um exercício fictício de comunicação.",
+      "weight": 3,
+      "days": 14
+    },
+    {
+      "id": "de01",
+      "area": "Detectar",
+      "title": "Logs essenciais",
+      "question": "Autenticação e ações administrativas deixam registros que alguém consegue consultar?",
+      "action": "Identificar fontes de logs, acesso autorizado e prazo de retenção compatível com as necessidades.",
+      "evidence": "Lista de fontes de logs e amostra fictícia de consulta.",
+      "weight": 3,
+      "days": 14
+    },
+    {
+      "id": "de02",
+      "area": "Detectar",
+      "title": "Alertas e triagem",
+      "question": "Há um responsável por analisar alertas de acesso e mudanças suspeitas?",
+      "action": "Definir alertas iniciais e um roteiro de triagem para separar sinais de incidentes confirmados.",
+      "evidence": "Roteiro de triagem com hipótese, evidência e encaminhamento.",
+      "weight": 3,
+      "days": 14
+    },
+    {
+      "id": "rs01",
+      "area": "Responder",
+      "title": "Plano de incidente",
+      "question": "A equipe sabe quem acionar e como preservar evidências diante de um incidente?",
+      "action": "Escrever um plano curto de acionamento, preservação de evidências e comunicação.",
+      "evidence": "Plano de resposta e contatos por função.",
+      "weight": 4,
+      "days": 7
+    },
+    {
+      "id": "rs02",
+      "area": "Responder",
+      "title": "Exercício de resposta",
+      "question": "O plano já foi exercitado em um cenário fictício?",
+      "action": "Realizar um exercício de mesa com um incidente fictício e registrar o que precisa mudar.",
+      "evidence": "Registro do exercício e ações de melhoria.",
+      "weight": 2,
+      "days": 30
+    },
+    {
+      "id": "rc01",
+      "area": "Recuperar",
+      "title": "Backup isolado",
+      "question": "Os dados essenciais têm cópias protegidas contra a perda do ambiente principal?",
+      "action": "Planejar cópias com acesso separado e proteção contra alteração, conforme o ambiente.",
+      "evidence": "Mapa de cópias, frequência e controle de acesso.",
+      "weight": 5,
+      "days": 7
+    },
+    {
+      "id": "rc02",
+      "area": "Recuperar",
+      "title": "Teste de restauração",
+      "question": "A restauração de um dado ou serviço essencial foi testada?",
+      "action": "Restaurar uma cópia em ambiente de teste e verificar integridade e tempo necessário.",
+      "evidence": "Registro do teste, resultado e problemas encontrados.",
+      "weight": 5,
+      "days": 7
+    },
+    {
+      "id": "rc03",
+      "area": "Recuperar",
+      "title": "Continuidade e melhoria",
+      "question": "Há uma alternativa para trabalhar durante a indisponibilidade e uma revisão após a recuperação?",
+      "action": "Definir alternativas para serviços críticos e revisar as lições após o exercício ou incidente.",
+      "evidence": "Plano de continuidade e registro de lições aprendidas.",
+      "weight": 3,
+      "days": 30
+    }
+  ],
+  "statuses": {
+    "unknown": "Não sei",
+    "absent": "Não implementado",
+    "partial": "Parcial",
+    "implemented": "Implementado",
+    "na": "Não se aplica"
+  }
+}
